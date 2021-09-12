@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/matteo/eclipse-workspace/Intellighenzia/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="3" lineNum="6" pc="268435456" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="3" lineNum="7" pc="268435460" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="10" pc="268435479" symbol="onMenu"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="11" pc="268435483" symbol="onMenu"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="12" pc="268435567" symbol="onMenu"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="4" pc="268436489" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="6" lineNum="7" pc="268435571" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="6" lineNum="8" pc="268435575" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="11" pc="268435594" symbol="onMenuItem"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="12" pc="268435598" symbol="onMenuItem"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="13" pc="268435609" symbol="onMenuItem"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="14" pc="268435633" symbol="onMenuItem"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="15" pc="268435644" symbol="onMenuItem"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="5" pc="268436470" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="9" lineNum="7" pc="268435669" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="9" lineNum="8" pc="268435673" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="10" lineNum="12" pc="268435692" symbol="onStart"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="11" lineNum="16" pc="268435697" symbol="onStop"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="12" lineNum="20" pc="268435702" symbol="getInitialView"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="12" lineNum="21" pc="268435706" symbol="getInitialView"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="12" lineNum="5" pc="268436383" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="13" lineNum="26" pc="268435774" symbol="getApp"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="13" lineNum="27" pc="268435786" symbol="getApp"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="15" lineNum="6" pc="268435803" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="15" lineNum="7" pc="268435807" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="16" lineNum="11" pc="268435826" symbol="onLayout"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="16" lineNum="12" pc="268435830" symbol="onLayout"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="17" lineNum="18" pc="268435868" symbol="onShow"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="18" lineNum="22" pc="268435873" symbol="onUpdate"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="18" lineNum="24" pc="268435877" symbol="onUpdate"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="19" lineNum="30" pc="268435898" symbol="onHide"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="19" lineNum="4" pc="268436451" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="18" pc="268435903" symbol="MainLayout"/>
+        <entry filename="Rez" id="25" lineNum="20" pc="268435915" symbol="MainLayout"/>
+        <entry filename="Rez" id="25" lineNum="21" pc="268436067" symbol="MainLayout"/>
+        <entry filename="Rez" id="25" lineNum="22" pc="268436179" symbol="MainLayout"/>
+        <entry filename="Rez" id="25" lineNum="24" pc="268436219" symbol="MainLayout"/>
+        <entry filename="Rez" id="28" lineNum="38" pc="268436247" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="39" pc="268436251" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="40" pc="268436269" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="41" pc="268436325" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="36" pc="268436428" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="1" pc="268436402" symbol="&lt;init&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="18" method="true" symbol="MainLayout"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="22" symbol="AppName"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="21" symbol="prompt"/>
+        <entry field="true" id="15" symbol="id_monkey"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="24" symbol="item_2"/>
+        <entry id="23" symbol="item_1"/>
+        <entry id="14" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="12" object="true" symbol="IntellighenziaView"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="17" object="true" symbol="MainMenu"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="9" object="true" symbol="IntellighenziaDelegate"/>
+        <entry field="true" id="16" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="11" object="true" symbol="IntellighenziaApp"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="10" object="true" symbol="IntellighenziaMenuDelegate"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="13" module="true" symbol="Layouts"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="20" symbol="menu_label_2"/>
+        <entry field="true" id="19" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435669" name="item" stackId="1" startPc="268435594"/>
+        <entry arg="true" endPc="268435697" name="state" stackId="1" startPc="268435692"/>
+        <entry arg="true" endPc="268435702" name="state" stackId="1" startPc="268435697"/>
+        <entry arg="true" endPc="268435868" name="dc" stackId="1" startPc="268435826"/>
+        <entry arg="true" endPc="268435898" name="dc" stackId="1" startPc="268435873"/>
+        <entry endPc="268436246" name="rez_cmp_local_text_7223237751" stackId="2" startPc="268435915"/>
+        <entry endPc="268436246" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268435915"/>
+        <entry arg="true" endPc="268436247" name="dc" stackId="1" startPc="268435903"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/IntellighenziaApp" offset="174" parentId="globals" symbolId="IntellighenziaApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="245" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="324" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="371" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="410" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="457" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="488" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="527" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="558" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/IntellighenziaView" offset="621" parentId="globals" symbolId="IntellighenziaView" type="class"/>
+        <dataEntry label="globals/IntellighenziaMenuDelegate" offset="700" parentId="globals" symbolId="IntellighenziaMenuDelegate" type="class"/>
+        <dataEntry label="globals/IntellighenziaDelegate" offset="755" parentId="globals" symbolId="IntellighenziaDelegate" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenu" parent="IntellighenziaDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaMenuDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenuItem" parent="IntellighenziaMenuDelegate">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="IntellighenziaApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="IntellighenziaApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="IntellighenziaApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="IntellighenziaView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="IntellighenziaView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="IntellighenziaView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="IntellighenziaView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="MainLayout" parent="Layouts">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MainMenu">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
