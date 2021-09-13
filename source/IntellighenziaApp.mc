@@ -4,8 +4,13 @@ import Toybox.WatchUi;
 
 class IntellighenziaApp extends Application.AppBase {
 
+	var workout;
+	var controller;
+
     function initialize() {
         AppBase.initialize();
+        workout = new $.Workout();
+        controller = new $.WorkoutController();
     }
 
     // onStart() is called on application start up
@@ -18,7 +23,7 @@ class IntellighenziaApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new IntellighenziaView(), new IntellighenziaDelegate() ] as Array<Views or InputDelegates>;
+        return [ new Rez.Menus.GradeMenu(), new GradeMenuDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }

@@ -1,8 +1,11 @@
 <strings>
     <string id="AppName">Intellighenzia</string>
 
-    <string id="prompt">Click the menu button</string>
-
-    <string id="menu_label_1">Item 1</string>
-    <string id="menu_label_2">Item 2</string>
+    <string id="selectGrade">Seleziona il grado</string>
+    <string id="selectResult">Via completata?</string>
+    <string id="selectNewAttempt">Nuovo tentativo?</string>
+    
+    <string id="grade">Grado</string>
+    <string id="timer">0:00</string>
+    <string id="hr">--</string>
 </strings>

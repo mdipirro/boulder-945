@@ -1,15 +1,20 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
-class IntellighenziaView extends WatchUi.View {
+class ClimbView extends WatchUi.View {
 
-    function initialize() {
+	private var currentGrade;
+
+    function initialize(grade as String) {
         View.initialize();
+        currentGrade = grade;
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
+        setLayout(Rez.Layouts.ClimbLayout(dc));
+        var gradeLabel = View.findDrawableById("grade") as Text;
+        gradeLabel.setText(currentGrade);
     }
 
     // Called when this View is brought to the foreground. Restore

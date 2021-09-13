@@ -1,0 +1,8 @@
+<menu2 id="GradeMenu" title="@Strings.selectGrade">
+    <menu-item id="gradeA" label="A" />
+    <menu-item id="gradeB" label="B" />
+    <menu-item id="gradeC" label="C" />
+    <menu-item id="gradeD" label="D" />
+    <menu-item id="gradeE" label="E" />
+    <menu-item id="gradeF" label="F" />
+</menu2>

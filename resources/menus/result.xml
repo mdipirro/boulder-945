@@ -1,0 +1,4 @@
+<menu2 id="AfterClimbMenu" title="@Strings.selectResult">
+    <menu-item id="done" label="Completata" />
+    <menu-item id="att" label="Tentativo" />
+</menu2>

@@ -2,152 +2,320 @@
 <debugInfo>
     <manifest filename="/home/matteo/eclipse-workspace/Intellighenzia/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="3" lineNum="6" pc="268435456" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="3" lineNum="7" pc="268435460" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="10" pc="268435479" symbol="onMenu"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="11" pc="268435483" symbol="onMenu"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="12" pc="268435567" symbol="onMenu"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaDelegate.mc" id="4" lineNum="4" pc="268436489" symbol="&lt;init&gt;"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="6" lineNum="7" pc="268435571" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="6" lineNum="8" pc="268435575" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="11" pc="268435594" symbol="onMenuItem"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="12" pc="268435598" symbol="onMenuItem"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="13" pc="268435609" symbol="onMenuItem"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="14" pc="268435633" symbol="onMenuItem"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="15" pc="268435644" symbol="onMenuItem"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaMenuDelegate.mc" id="7" lineNum="5" pc="268436470" symbol="&lt;init&gt;"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="9" lineNum="7" pc="268435669" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="9" lineNum="8" pc="268435673" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="10" lineNum="12" pc="268435692" symbol="onStart"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="11" lineNum="16" pc="268435697" symbol="onStop"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="12" lineNum="20" pc="268435702" symbol="getInitialView"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="12" lineNum="21" pc="268435706" symbol="getInitialView"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="12" lineNum="5" pc="268436383" symbol="&lt;init&gt;"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="13" lineNum="26" pc="268435774" symbol="getApp"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="13" lineNum="27" pc="268435786" symbol="getApp"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="15" lineNum="6" pc="268435803" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="15" lineNum="7" pc="268435807" symbol="initialize"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="16" lineNum="11" pc="268435826" symbol="onLayout"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="16" lineNum="12" pc="268435830" symbol="onLayout"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="17" lineNum="18" pc="268435868" symbol="onShow"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="18" lineNum="22" pc="268435873" symbol="onUpdate"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="18" lineNum="24" pc="268435877" symbol="onUpdate"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="19" lineNum="30" pc="268435898" symbol="onHide"/>
-        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaView.mc" id="19" lineNum="4" pc="268436451" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="25" lineNum="18" pc="268435903" symbol="MainLayout"/>
-        <entry filename="Rez" id="25" lineNum="20" pc="268435915" symbol="MainLayout"/>
-        <entry filename="Rez" id="25" lineNum="21" pc="268436067" symbol="MainLayout"/>
-        <entry filename="Rez" id="25" lineNum="22" pc="268436179" symbol="MainLayout"/>
-        <entry filename="Rez" id="25" lineNum="24" pc="268436219" symbol="MainLayout"/>
-        <entry filename="Rez" id="28" lineNum="38" pc="268436247" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="39" pc="268436251" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="40" pc="268436269" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="41" pc="268436325" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="36" pc="268436428" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="1" pc="268436402" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="3" lineNum="6" pc="268435456" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="3" lineNum="7" pc="268435460" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="3" lineNum="8" pc="268435473" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="4" lineNum="11" pc="268435488" symbol="newClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="4" lineNum="12" pc="268435492" symbol="newClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="5" lineNum="15" pc="268435535" symbol="activeClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Workout.mc" id="5" lineNum="16" pc="268435539" symbol="activeClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="7" lineNum="7" pc="268435573" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="7" lineNum="8" pc="268435577" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="8" lineNum="11" pc="268435596" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="8" lineNum="12" pc="268435600" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="8" lineNum="13" pc="268435625" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="8" lineNum="14" pc="268435638" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="8" lineNum="15" pc="268435652" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/before/GradeMenuDelegate.mc" id="8" lineNum="5" pc="268438313" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/WorkoutController.mc" id="10" lineNum="7" pc="268435723" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/WorkoutController.mc" id="10" lineNum="8" pc="268435727" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/WorkoutController.mc" id="11" lineNum="11" pc="268435757" symbol="newClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/WorkoutController.mc" id="11" lineNum="12" pc="268435761" symbol="newClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/WorkoutController.mc" id="12" lineNum="15" pc="268435782" symbol="activeClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/WorkoutController.mc" id="12" lineNum="16" pc="268435786" symbol="activeClimb"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="14" lineNum="7" pc="268435805" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="14" lineNum="8" pc="268435809" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="15" lineNum="11" pc="268435828" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="15" lineNum="12" pc="268435832" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="15" lineNum="13" pc="268435860" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="15" lineNum="15" pc="268435880" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/AfterClimbMenuDelegate.mc" id="15" lineNum="5" pc="268438147" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="17" lineNum="7" pc="268435968" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="17" lineNum="8" pc="268435972" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="18" lineNum="11" pc="268435991" symbol="onBack"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="18" lineNum="12" pc="268435995" symbol="onBack"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="18" lineNum="13" pc="268436023" symbol="onBack"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="18" lineNum="14" pc="268436107" symbol="onBack"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbViewDelegate.mc" id="18" lineNum="5" pc="268438332" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="20" lineNum="8" pc="268436111" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="20" lineNum="9" pc="268436115" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="20" lineNum="10" pc="268436133" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="21" lineNum="14" pc="268436144" symbol="onLayout"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="21" lineNum="15" pc="268436148" symbol="onLayout"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="21" lineNum="16" pc="268436185" symbol="onLayout"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="21" lineNum="17" pc="268436209" symbol="onLayout"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="22" lineNum="23" pc="268436230" symbol="onShow"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="23" lineNum="27" pc="268436235" symbol="onUpdate"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="23" lineNum="29" pc="268436239" symbol="onUpdate"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="24" lineNum="35" pc="268436260" symbol="onHide"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/during/ClimbView.mc" id="24" lineNum="4" pc="268438273" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="26" lineNum="8" pc="268436265" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="26" lineNum="9" pc="268436269" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="12" pc="268436288" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="13" pc="268436292" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="14" pc="268436320" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="17" pc="268436382" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="18" pc="268436414" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="19" pc="268436493" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="22" pc="268436496" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="23" pc="268436580" symbol="onSelect"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/activity/climb/after/NewAttemptMenuDelegate.mc" id="27" lineNum="6" pc="268438166" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="29" lineNum="10" pc="268436584" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="29" lineNum="11" pc="268436588" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="29" lineNum="12" pc="268436606" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="29" lineNum="13" pc="268436640" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="30" lineNum="17" pc="268436675" symbol="onStart"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="31" lineNum="21" pc="268436680" symbol="onStop"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="32" lineNum="25" pc="268436685" symbol="getInitialView"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="32" lineNum="26" pc="268436689" symbol="getInitialView"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="32" lineNum="5" pc="268438293" symbol="&lt;init&gt;"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="33" lineNum="31" pc="268436769" symbol="getApp"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/IntellighenziaApp.mc" id="33" lineNum="32" pc="268436781" symbol="getApp"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="35" lineNum="7" pc="268436798" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="35" lineNum="8" pc="268436802" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="35" lineNum="9" pc="268436812" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="36" lineNum="12" pc="268436827" symbol="getGrade"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="36" lineNum="13" pc="268436831" symbol="getGrade"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="37" lineNum="16" pc="268436841" symbol="newAttempt"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Climb.mc" id="37" lineNum="17" pc="268436845" symbol="newAttempt"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Attempt.mc" id="39" lineNum="5" pc="268436888" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Attempt.mc" id="39" lineNum="6" pc="268436892" symbol="initialize"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Attempt.mc" id="40" lineNum="9" pc="268436903" symbol="getDuration"/>
+        <entry filename="/home/matteo/eclipse-workspace/Intellighenzia/source/model/Attempt.mc" id="40" lineNum="10" pc="268436907" symbol="getDuration"/>
+        <entry filename="Rez" id="46" lineNum="17" pc="268436917" symbol="ClimbLayout"/>
+        <entry filename="Rez" id="46" lineNum="19" pc="268436929" symbol="ClimbLayout"/>
+        <entry filename="Rez" id="46" lineNum="20" pc="268437094" symbol="ClimbLayout"/>
+        <entry filename="Rez" id="46" lineNum="21" pc="268437259" symbol="ClimbLayout"/>
+        <entry filename="Rez" id="46" lineNum="23" pc="268437424" symbol="ClimbLayout"/>
+        <entry filename="Rez" id="49" lineNum="37" pc="268437462" symbol="initialize"/>
+        <entry filename="Rez" id="49" lineNum="38" pc="268437466" symbol="initialize"/>
+        <entry filename="Rez" id="49" lineNum="39" pc="268437522" symbol="initialize"/>
+        <entry filename="Rez" id="49" lineNum="40" pc="268437572" symbol="initialize"/>
+        <entry filename="Rez" id="49" lineNum="35" pc="268438249" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="51" lineNum="52" pc="268437623" symbol="initialize"/>
+        <entry filename="Rez" id="51" lineNum="53" pc="268437627" symbol="initialize"/>
+        <entry filename="Rez" id="51" lineNum="54" pc="268437683" symbol="initialize"/>
+        <entry filename="Rez" id="51" lineNum="55" pc="268437733" symbol="initialize"/>
+        <entry filename="Rez" id="51" lineNum="50" pc="268438230" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="53" lineNum="67" pc="268437784" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="68" pc="268437788" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="69" pc="268437844" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="70" pc="268437894" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="71" pc="268437944" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="72" pc="268437994" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="73" pc="268438044" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="74" pc="268438094" symbol="initialize"/>
+        <entry filename="Rez" id="53" lineNum="65" pc="268438211" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="54" lineNum="1" pc="268438185" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389346" symbol="text"/>
+        <entry id="37" method="true" symbol="newAttempt"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="35" symbol="&lt;globals/Climb/&lt;&gt;attempts&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="18" method="true" symbol="MainLayout"/>
+        <entry id="48" symbol="done"/>
+        <entry field="true" id="27" symbol="timer"/>
+        <entry field="true" id="42" symbol="workout"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="22" symbol="AppName"/>
+        <entry id="12" object="true" symbol="ClimbViewDelegate"/>
+        <entry id="46" symbol="att"/>
+        <entry field="true" id="32" symbol="AppName"/>
+        <entry id="23" object="true" symbol="AfterClimbMenu"/>
+        <entry id="26" method="true" symbol="ClimbLayout"/>
+        <entry id="24" object="true" symbol="NewAttemptMenu"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-        <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry id="8389345" symbol="rezId"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="10" object="true" symbol="WorkoutController"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="21" symbol="prompt"/>
-        <entry field="true" id="15" symbol="id_monkey"/>
+        <entry field="true" id="30" symbol="selectNewAttempt"/>
+        <entry field="true" id="18" symbol="&lt;globals/Attempt/&lt;&gt;duration&gt;"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="24" symbol="item_2"/>
-        <entry id="23" symbol="item_1"/>
-        <entry id="14" module="true" symbol="Menus"/>
+        <entry id="21" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="12" object="true" symbol="IntellighenziaView"/>
+        <entry field="true" id="45" symbol="&lt;globals/Workout/&lt;&gt;climbs&gt;"/>
         <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="31" symbol="hr"/>
         <entry id="8389349" symbol="justification"/>
+        <entry id="13" object="true" symbol="ClimbView"/>
+        <entry id="41" method="true" symbol="activeClimb"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="17" object="true" symbol="MainMenu"/>
+        <entry field="true" id="39" symbol="&lt;globals/WorkoutController/&lt;&gt;workout&gt;"/>
+        <entry id="19" method="true" symbol="getDuration"/>
+        <entry id="25" object="true" symbol="GradeMenu"/>
+        <entry id="8389960" object="true" symbol="Workout"/>
+        <entry id="9" object="true" symbol="GradeMenuDelegate"/>
         <entry id="8388644" module="true" symbol="System"/>
+        <entry id="36" method="true" symbol="getGrade"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="16" object="true" symbol="Climb"/>
+        <entry id="17" object="true" symbol="Attempt"/>
         <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="47" symbol="newAtt"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry id="9" object="true" symbol="IntellighenziaDelegate"/>
-        <entry field="true" id="16" symbol="LauncherIcon"/>
+        <entry field="true" id="22" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
-        <entry id="11" object="true" symbol="IntellighenziaApp"/>
+        <entry id="14" object="true" symbol="NewAttemptMenuDelegate"/>
+        <entry id="15" object="true" symbol="IntellighenziaApp"/>
+        <entry field="true" id="29" symbol="grade"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry id="10" object="true" symbol="IntellighenziaMenuDelegate"/>
+        <entry id="54" symbol="gradeF"/>
+        <entry id="53" symbol="gradeE"/>
+        <entry id="52" symbol="gradeD"/>
+        <entry id="51" symbol="gradeC"/>
+        <entry id="50" symbol="gradeB"/>
+        <entry id="49" symbol="gradeA"/>
         <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="34" symbol="&lt;globals/Climb/&lt;&gt;grade&gt;"/>
         <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="38" symbol="&lt;globals/ClimbView/&lt;&gt;currentGrade&gt;"/>
+        <entry id="11" object="true" symbol="AfterClimbMenuDelegate"/>
+        <entry id="40" method="true" symbol="newClimb"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry id="8389347" symbol="color"/>
-        <entry id="13" module="true" symbol="Layouts"/>
+        <entry field="true" id="33" symbol="selectGrade"/>
+        <entry field="true" id="28" symbol="selectResult"/>
+        <entry id="20" module="true" symbol="Layouts"/>
+        <entry field="true" id="44" symbol="&lt;globals/Workout/&lt;&gt;avgHr&gt;"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="43" symbol="controller"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="20" symbol="menu_label_2"/>
-        <entry field="true" id="19" symbol="menu_label_1"/>
+        <entry field="true" id="8389642" symbol="title"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435669" name="item" stackId="1" startPc="268435594"/>
-        <entry arg="true" endPc="268435697" name="state" stackId="1" startPc="268435692"/>
-        <entry arg="true" endPc="268435702" name="state" stackId="1" startPc="268435697"/>
-        <entry arg="true" endPc="268435868" name="dc" stackId="1" startPc="268435826"/>
-        <entry arg="true" endPc="268435898" name="dc" stackId="1" startPc="268435873"/>
-        <entry endPc="268436246" name="rez_cmp_local_text_7223237751" stackId="2" startPc="268435915"/>
-        <entry endPc="268436246" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268435915"/>
-        <entry arg="true" endPc="268436247" name="dc" stackId="1" startPc="268435903"/>
+        <entry arg="true" endPc="268435535" name="grade" stackId="1" startPc="268435488"/>
+        <entry endPc="268435722" name="controller" stackId="2" startPc="268435600"/>
+        <entry endPc="268435722" name="grade" stackId="3" startPc="268435600"/>
+        <entry arg="true" endPc="268435723" name="item" stackId="1" startPc="268435596"/>
+        <entry arg="true" endPc="268435782" name="grade" stackId="1" startPc="268435757"/>
+        <entry arg="true" endPc="268435968" name="item" stackId="1" startPc="268435828"/>
+        <entry arg="true" endPc="268436144" name="grade" stackId="1" startPc="268436111"/>
+        <entry endPc="268436229" name="gradeLabel" stackId="2" startPc="268436148"/>
+        <entry arg="true" endPc="268436230" name="dc" stackId="1" startPc="268436144"/>
+        <entry arg="true" endPc="268436260" name="dc" stackId="1" startPc="268436235"/>
+        <entry endPc="268436583" name="currentClimb" stackId="2" startPc="268436331"/>
+        <entry arg="true" endPc="268436584" name="item" stackId="1" startPc="268436288"/>
+        <entry arg="true" endPc="268436680" name="state" stackId="1" startPc="268436675"/>
+        <entry arg="true" endPc="268436685" name="state" stackId="1" startPc="268436680"/>
+        <entry arg="true" endPc="268436827" name="difficulty" stackId="1" startPc="268436798"/>
+        <entry arg="true" endPc="268436888" name="seconds" stackId="1" startPc="268436841"/>
+        <entry arg="true" endPc="268436903" name="seconds" stackId="1" startPc="268436888"/>
+        <entry endPc="268437461" name="rez_cmp_local_text_grade" stackId="2" startPc="268436929"/>
+        <entry endPc="268437461" name="rez_cmp_local_text_hr" stackId="4" startPc="268436929"/>
+        <entry endPc="268437461" name="rez_cmp_local_text_timer" stackId="3" startPc="268436929"/>
+        <entry arg="true" endPc="268437462" name="dc" stackId="1" startPc="268436917"/>
     </localVars>
     <annotations>
-        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="timer"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="selectResult"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="grade"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="selectNewAttempt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="hr"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="selectGrade"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/IntellighenziaApp" offset="174" parentId="globals" symbolId="IntellighenziaApp" type="class"/>
-        <dataEntry label="globals/Rez" offset="245" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="324" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="371" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="410" parentId="Menus" symbolId="MainMenu" type="class"/>
-        <dataEntry label="globals/Rez/Fonts" offset="457" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="488" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="527" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="558" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/IntellighenziaView" offset="621" parentId="globals" symbolId="IntellighenziaView" type="class"/>
-        <dataEntry label="globals/IntellighenziaMenuDelegate" offset="700" parentId="globals" symbolId="IntellighenziaMenuDelegate" type="class"/>
-        <dataEntry label="globals/IntellighenziaDelegate" offset="755" parentId="globals" symbolId="IntellighenziaDelegate" type="class"/>
+        <dataEntry label="globals/Attempt" offset="222" parentId="globals" symbolId="Attempt" type="class"/>
+        <dataEntry label="globals/AfterClimbMenuDelegate" offset="285" parentId="globals" symbolId="AfterClimbMenuDelegate" type="class"/>
+        <dataEntry label="globals/NewAttemptMenuDelegate" offset="340" parentId="globals" symbolId="NewAttemptMenuDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="395" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="474" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="513" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/GradeMenu" offset="568" parentId="Menus" symbolId="GradeMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/NewAttemptMenu" offset="615" parentId="Menus" symbolId="NewAttemptMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/AfterClimbMenu" offset="662" parentId="Menus" symbolId="AfterClimbMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="709" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="740" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="779" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="810" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Climb" offset="897" parentId="globals" symbolId="Climb" type="class"/>
+        <dataEntry label="globals/ClimbView" offset="976" parentId="globals" symbolId="ClimbView" type="class"/>
+        <dataEntry label="globals/WorkoutController" offset="1063" parentId="globals" symbolId="WorkoutController" type="class"/>
+        <dataEntry label="globals/IntellighenziaApp" offset="1134" parentId="globals" symbolId="IntellighenziaApp" type="class"/>
+        <dataEntry label="globals/Workout" offset="1221" parentId="globals" symbolId="Workout" type="class"/>
+        <dataEntry label="globals/GradeMenuDelegate" offset="1300" parentId="globals" symbolId="GradeMenuDelegate" type="class"/>
+        <dataEntry label="globals/ClimbViewDelegate" offset="1355" parentId="globals" symbolId="ClimbViewDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaDelegate">
+        <functionEntry accessMode="public" name="initialize" parent="Workout">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onMenu" parent="IntellighenziaDelegate">
+        <functionEntry accessMode="public" name="newClimb" parent="Workout">
+            <param id="grade"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaMenuDelegate">
+        <functionEntry accessMode="public" name="activeClimb" parent="Workout">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onMenuItem" parent="IntellighenziaMenuDelegate">
+        <functionEntry accessMode="public" name="initialize" parent="GradeMenuDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onSelect" parent="GradeMenuDelegate">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WorkoutController">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="newClimb" parent="WorkoutController">
+            <param id="grade"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="activeClimb" parent="WorkoutController">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="AfterClimbMenuDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onSelect" parent="AfterClimbMenuDelegate">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ClimbViewDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onBack" parent="ClimbViewDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ClimbView">
+            <param id="grade"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="ClimbView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="ClimbView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="ClimbView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="ClimbView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="NewAttemptMenuDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onSelect" parent="NewAttemptMenuDelegate">
             <param id="item"/>
             <documentation/>
         </functionEntry>
@@ -168,28 +336,35 @@
         <functionEntry accessMode="public" name="getApp">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="initialize" parent="IntellighenziaView">
+        <functionEntry accessMode="public" name="initialize" parent="Climb">
+            <param id="difficulty"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onLayout" parent="IntellighenziaView">
+        <functionEntry accessMode="public" name="getGrade" parent="Climb">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="newAttempt" parent="Climb">
+            <param id="seconds"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Attempt">
+            <param id="seconds"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getDuration" parent="Attempt">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="ClimbLayout" parent="Layouts">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onShow" parent="IntellighenziaView">
+        <functionEntry accessMode="public" name="initialize" parent="AfterClimbMenu">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onUpdate" parent="IntellighenziaView">
-            <param id="dc"/>
+        <functionEntry accessMode="public" name="initialize" parent="NewAttemptMenu">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onHide" parent="IntellighenziaView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="MainLayout" parent="Layouts">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="initialize" parent="MainMenu">
+        <functionEntry accessMode="public" name="initialize" parent="GradeMenu">
             <documentation/>
         </functionEntry>
     </functions>
