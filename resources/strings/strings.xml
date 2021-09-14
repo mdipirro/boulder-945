@@ -5,7 +5,11 @@
     <string id="selectResult">Via completata?</string>
     <string id="selectNewAttempt">Nuovo tentativo?</string>
     
-    <string id="grade">Grado</string>
-    <string id="timer">0:00</string>
-    <string id="hr">--</string>
+    <string id="gradeLabel">Grado</string>
+    <string id="timerLabel">Durata</string>
+    <string id="hrLabel">HR</string>
+    <string id="attemptLabel">Tentativi</string>
+    
+    <string id="timerInitialValue">0:00</string>
+    <string id="hrInitialValue">--</string>
 </strings>

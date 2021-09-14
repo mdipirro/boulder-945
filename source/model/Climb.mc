@@ -1,3 +1,5 @@
+import Toybox.Time;
+
 class Climb {
 	
 	private var grade;
@@ -13,7 +15,16 @@ class Climb {
 		return grade;
 	}
 	
-	function newAttempt(seconds as Int) {
-		attempts.add(new Attempt(seconds));
+	function getAttempts() as Number {
+		return attempts.size();
+	}
+	
+	function newAttempt(startTime as Time.Moment) {
+		attempts.add(new Attempt(startTime));
+	}
+	
+	function endAttempt(endTime as Time.Moment) {
+		var currentAttempt = attempts[attempts.size() - 1];
+		currentAttempt.end(endTime);
 	}
 }

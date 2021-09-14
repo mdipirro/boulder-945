@@ -14,8 +14,7 @@ class NewAttemptMenuDelegate extends WatchUi.Menu2InputDelegate {
     	switch (item.getId()) {
     		case :newAtt:
     			// If we're gonna do a new attempt, show the ClimbView as before
-    			var currentClimb = Application.getApp().workout.activeClimb();
-    			pushView(new ClimbView(currentClimb.getGrade()), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
+    			pushView(new ClimbView(), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
     			break;
     		case :newClimb:
     			// If the climb was not completed, let the user decide whether to attempt again or not

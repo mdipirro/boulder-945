@@ -1,11 +1,15 @@
-import Toybox.Lang;
+import Toybox.Application;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Time;
 
 class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
 
     function initialize() {
         Menu2InputDelegate.initialize();
+        
+        var controller = Application.getApp().controller;
+    	controller.attemptComplete(Time.now());
     }
 
     function onSelect(item as MenuItem) as Void {

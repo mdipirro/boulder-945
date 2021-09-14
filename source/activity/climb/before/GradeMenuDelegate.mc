@@ -12,7 +12,7 @@ class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
 		var controller = Application.getApp().controller;
 		var grade = item.getLabel();
 		controller.newClimb(grade);
-    	pushView(new ClimbView(grade), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
+    	pushView(new ClimbView(), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
     }
 
 }

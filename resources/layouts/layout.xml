@@ -1,5 +1,14 @@
 <layout id="ClimbLayout">
-    <label id="grade" x="center" y="20" text="@Strings.grade" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="timer" x="center" y="90" text="@Strings.timer" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="hr" x="center" y="160" text="@Strings.hr" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+	<label id="gradeLabel" x="80" y="30" text="@Strings.gradeLabel" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="grade" x="180" y="30" text="" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    
+    <label id="attemptsLabel" x="80" y="70" text="@Strings.attemptLabel" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="attempts" x="180" y="70" text="" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    
+    <label id="timerLabel" x="80" y="110" text="@Strings.timerLabel" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="timer" x="180" y="110" text="@Strings.timerInitialValue" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    
+    <label id="hrlabel" x="80" y="150" text="@Strings.hrLabel" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="hr" x="180" y="150" text="@Strings.hrInitialValue" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
 </layout>
+ 

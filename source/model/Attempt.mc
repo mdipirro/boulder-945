@@ -1,12 +1,24 @@
+import Toybox.Time;
+
 class Attempt {
 	
-	private var duration;
+	private var startTime;
+	private var endTime;
 	
-	function initialize(seconds as Int) {
-		duration = seconds;
+	function initialize(st as Time.Moment) {
+		startTime = st;
+		endTime = null;
 	}
 	
-	function getDuration() as Int {
-		return duration;
+	function end(time as Time.Moment) {
+		endTime = time;
+	}
+	
+	function getDuration() as Number {
+		if (endTime != null) { 
+			return endTime.subtract(startTime).value();
+		} else {
+			return Time.now().subtract(startTime).value();	
+		}
 	}
 }
