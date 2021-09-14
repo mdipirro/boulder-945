@@ -6,11 +6,13 @@ class IntellighenziaApp extends Application.AppBase {
 
 	var workout;
 	var controller;
+	var session;
 
     function initialize() {
         AppBase.initialize();
         workout = new $.Workout();
         controller = new $.WorkoutController();
+        session = null;
     }
 
     // onStart() is called on application start up
