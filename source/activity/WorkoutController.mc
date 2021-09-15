@@ -20,4 +20,12 @@ class WorkoutController {
 	function attemptComplete(endTime as Time.Moment) {
 		workout.activeClimb().endAttempt(endTime);
 	}
+	
+	function climbDone() {
+		workout.activeClimb().complete();
+	}
+	
+	function climbFailed() {
+		workout.activeClimb().fail();
+	}
 }
