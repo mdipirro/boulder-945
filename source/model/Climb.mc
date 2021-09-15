@@ -4,11 +4,19 @@ class Climb {
 	
 	private var grade;
 	private var attempts;
+	private var status;
+	
+	enum {
+		InProgress,
+		Completed,
+		Failed
+	}
 	
 
 	function initialize(difficulty as String) {
 		grade = difficulty;
 		attempts = [];
+		status = InProgress;
 	}
 	
 	function getGrade() as String {
@@ -26,5 +34,25 @@ class Climb {
 	function endAttempt(endTime as Time.Moment) {
 		var currentAttempt = attempts[attempts.size() - 1];
 		currentAttempt.end(endTime);
+	}
+	
+	function isInProgress() as Boolean {
+		return status == InProgress;
+	}
+	
+	function fail() {
+		status = Failed;
+	}
+	
+	function isFailed() as Boolean {
+		return status == Failed;
+	}
+	
+	function complete() {
+		status = Completed;
+	}
+	
+	function isComplete() as Boolean {
+		return status == Completed;
 	}
 }
