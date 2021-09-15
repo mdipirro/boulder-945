@@ -27,7 +27,7 @@ class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
     			break;
     		case :start:
     			session.start();
-    			WatchUi.popView();
+    			WatchUi.popView(WatchUi.SLIDE_UP);
     			break;
     	}
     }
