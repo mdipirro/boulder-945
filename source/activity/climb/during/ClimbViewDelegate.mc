@@ -10,13 +10,15 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
     }
     
     function onSelect() {
-    	var session = Application.getApp().session;
+    	var session = Application.getApp().getSession();
     	if (session == null) {
-    		Application.getApp().session = ActivityRecording.createSession({
+    		session = ActivityRecording.createSession({
     			:name => "Intellighenzia Bouldering",
     			:sport => ActivityRecording.SPORT_GENERIC
     		});
-    		Application.getApp().session.start();
+    		session.start();
+    		
+    		Application.getApp().setSession(session);
     	} else if (!session.isRecording()) {
 			session.start();
     	} else { // session exists and is recording

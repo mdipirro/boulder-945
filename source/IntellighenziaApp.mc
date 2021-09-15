@@ -4,9 +4,9 @@ import Toybox.WatchUi;
 
 class IntellighenziaApp extends Application.AppBase {
 
-	var workout;
-	var controller;
-	var session;
+	private var workout;
+	private var controller;
+	private var session;
 
     function initialize() {
         AppBase.initialize();
@@ -27,7 +27,22 @@ class IntellighenziaApp extends Application.AppBase {
     function getInitialView() as Array<Views or InputDelegates>? {
         return [ new Rez.Menus.GradeMenu(), new GradeMenuDelegate() ] as Array<Views or InputDelegates>;
     }
-
+    
+    function getWorkout() as Workout {
+    	return workout;
+    }
+    
+    function getSession() as Session {
+    	return session;
+    }
+    
+    function setSession(sess as Session) {
+    	session = sess;
+    }
+	
+	function getWorkoutController() as WorkoutController {
+    	return controller;
+    }
 }
 
 function getApp() as IntellighenziaApp {

@@ -6,7 +6,7 @@ class WorkoutController {
 	private var workout; 
 
 	function initialize() {
-		workout = Application.getApp().workout;
+		workout = Application.getApp().getWorkout();
 	}
 	
 	function newClimb(grade as String) {

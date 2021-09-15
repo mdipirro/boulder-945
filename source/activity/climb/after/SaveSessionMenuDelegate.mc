@@ -15,7 +15,7 @@ class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onSelect(item as MenuItem) as Void {
-    	var session = Application.getApp().session;
+    	var session = Application.getApp().getSession();
     	switch(item.getId()) {
     		case :save:
     			session.save();

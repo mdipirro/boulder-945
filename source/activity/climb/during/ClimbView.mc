@@ -16,8 +16,8 @@ class ClimbView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
-        currentClimb = Application.getApp().workout.activeClimb();
-        controller = Application.getApp().controller;
+        currentClimb = Application.getApp().getWorkout().activeClimb();
+        controller = Application.getApp().getWorkoutController();
         timer = new Timer.Timer();
         duration = 0;
     }

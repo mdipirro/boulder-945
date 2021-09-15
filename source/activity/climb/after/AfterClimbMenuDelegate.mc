@@ -8,7 +8,7 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
     function initialize() {
         Menu2InputDelegate.initialize();
         
-        var controller = Application.getApp().controller;
+        var controller = Application.getApp().getWorkoutController();
     	controller.attemptComplete(Time.now());
     }
 
