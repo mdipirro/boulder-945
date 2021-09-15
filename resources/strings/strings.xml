@@ -13,5 +13,5 @@
     <string id="timerInitialValue">0:00</string>
     <string id="hrInitialValue">--</string>
     
-    <string id="selectSaveSession">"Salvare?</string>
+    <string id="selectSaveSession">Salvare?</string>
 </strings>
