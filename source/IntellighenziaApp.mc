@@ -7,12 +7,17 @@ class IntellighenziaApp extends Application.AppBase {
 	private var workout;
 	private var controller;
 	private var session;
+	
+	// flow control flags
+	private var workoutStarted;
 
     function initialize() {
         AppBase.initialize();
         workout = new $.Workout();
         controller = new $.WorkoutController();
         session = null;
+        
+        workoutStarted = false;
     }
 
     // onStart() is called on application start up
@@ -42,6 +47,14 @@ class IntellighenziaApp extends Application.AppBase {
 	
 	function getWorkoutController() as WorkoutController {
     	return controller;
+    }
+    
+    function startWorkout() {
+    	workoutStarted = true;
+    }
+    
+    function isWorkoutStarted() as Bool {
+    	return workoutStarted;
     }
 }
 

@@ -5,12 +5,16 @@ import Toybox.WatchUi;
 
 class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
 
+private var app;
+
 	function initialize() {
         BehaviorDelegate.initialize();
+        
+        app = Application.getApp();
     }
     
     function onSelect() {
-    	var session = Application.getApp().getSession();
+    	var session = app.getSession();
     	if (session == null) {
     		session = ActivityRecording.createSession({
     			:name => "Intellighenzia Bouldering",
@@ -18,7 +22,9 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
     		});
     		session.start();
     		
-    		Application.getApp().setSession(session);
+    		app.setSession(session);
+    		app.startWorkout();
+    		WatchUi.requestUpdate();
     	} else if (!session.isRecording()) {
 			session.start();
     	} else { // session exists and is recording
@@ -29,7 +35,9 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
 
     function onBack() as Boolean {
     	WatchUi.popView(WatchUi.SLIDE_UP); // remove climb view
-    	WatchUi.pushView(new Rez.Menus.AfterClimbMenu(), new AfterClimbMenuDelegate(), WatchUi.SLIDE_LEFT);
+    	if (app.isWorkoutStarted()) {
+    		WatchUi.pushView(new Rez.Menus.AfterClimbMenu(), new AfterClimbMenuDelegate(), WatchUi.SLIDE_LEFT);
+    	}
     	return true;    	
     }
 
