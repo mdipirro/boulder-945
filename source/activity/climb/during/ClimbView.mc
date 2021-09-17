@@ -16,6 +16,7 @@ class ClimbView extends WatchUi.View {
 	
 	private var durationLabel;
 	private var attemptsLabel;
+	private var hrLabel;
 	private var currentAttempts; // needed as WatchUi.Text does not provide a method to access the text 
 
     function initialize() {
@@ -37,6 +38,7 @@ class ClimbView extends WatchUi.View {
         
         durationLabel = View.findDrawableById("timer") as Text;
         attemptsLabel = View.findDrawableById("attempts") as Text;
+        hrLabel = View.findDrawableById("hr") as Text;
         
         if (app.isWorkoutStarted()) {
         	// This is needed to init a new attempt on the climbds from the second on, as they start immediately (i.e. without waiting for the pressure on Start)

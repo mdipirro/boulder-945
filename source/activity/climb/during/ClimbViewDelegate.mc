@@ -40,6 +40,8 @@ private var app;
     function onBack() as Boolean {
     	if (app.isWorkoutStarted()) {
     		WatchUi.pushView(new Rez.Menus.AfterClimbMenu(), new AfterClimbMenuDelegate(), WatchUi.SLIDE_LEFT);
+    	} else {
+			WatchUi.popView(WatchUi.SLIDE_UP);    	
     	}
     	return true;    	
     }
