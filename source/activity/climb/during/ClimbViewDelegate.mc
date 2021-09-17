@@ -22,8 +22,10 @@ private var app;
     		});
     		session.start();
     		
+    		
     		app.setSession(session);
     		app.startWorkout();
+    		app.getWorkoutController().newAttemptOnActiveClimb(Time.now());
     		WatchUi.requestUpdate();
     	} else if (!session.isRecording()) {
 			session.start();
@@ -34,7 +36,6 @@ private var app;
     }
 
     function onBack() as Boolean {
-    	WatchUi.popView(WatchUi.SLIDE_UP); // remove climb view
     	if (app.isWorkoutStarted()) {
     		WatchUi.pushView(new Rez.Menus.AfterClimbMenu(), new AfterClimbMenuDelegate(), WatchUi.SLIDE_LEFT);
     	}

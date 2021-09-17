@@ -10,15 +10,16 @@ class NewAttemptMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onSelect(item as MenuItem) as Void {
-    	WatchUi.popView(WatchUi.SLIDE_UP); // remove the current menu
+    	var controller = Application.getApp().getWorkoutController();
     	switch (item.getId()) {
     		case :newAtt:
-    			// If we're gonna do a new attempt, show the ClimbView as before
-    			pushView(new ClimbView(), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
+    			// If we're gonna do a new attempt, show the ClimbView as before and start a new attempt
+    			controller.newAttemptOnActiveClimb(Time.now());
+    			popView(WatchUi.SLIDE_LEFT);
     			break;
     		case :newClimb:
-    			// If the climb was not completed, let the user decide whether to attempt again or not
-    			WatchUi.pushView(new Rez.Menus.GradeMenu(), new GradeMenuDelegate(), WatchUi.SLIDE_LEFT);
+    			controller.climbFailed();
+    			WatchUi.switchToView(new Rez.Menus.GradeMenu(), new GradeMenuDelegate(), WatchUi.SLIDE_LEFT);
     			break;
     	}
     }
