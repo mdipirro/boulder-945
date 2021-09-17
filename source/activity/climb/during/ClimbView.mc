@@ -16,7 +16,6 @@ class ClimbView extends WatchUi.View {
 	
 	private var durationLabel;
 	private var attemptsLabel;
-	private var hrLabel;
 	private var currentAttempts; // needed as WatchUi.Text does not provide a method to access the text 
 
     function initialize() {
@@ -38,7 +37,8 @@ class ClimbView extends WatchUi.View {
         
         durationLabel = View.findDrawableById("timer") as Text;
         attemptsLabel = View.findDrawableById("attempts") as Text;
-        hrLabel = View.findDrawableById("hr") as Text;
+        
+        startTimer();
         
         if (app.isWorkoutStarted()) {
         	// This is needed to init a new attempt on the climbds from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
@@ -60,22 +60,14 @@ class ClimbView extends WatchUi.View {
         	duration = 0;
         	writeDuration();
         }
-        
-        
-        // Start the timer if the workout was started and the duration is still 0
-        if (app.isWorkoutStarted() && duration == 0) {
-			startTimer();
-    	} else { // or else update the view
-			writeDuration();
-    	}
+		
+		writeDuration();
     }
     
     function onShow() as Void {
     	// Restart the timer but don't count that as a new attempt only if the climb is still in progress
     	if (currentClimb.isInProgress()) {
-	    	if (app.isWorkoutStarted()) {
-	    		startTimer();
-	    	}
+	    	startTimer();
 	    } else {
 	    	WatchUi.popView(WatchUi.SLIDE_LEFT); // pop the view is the current climb was ended (either successfully or not)
 	    }
@@ -89,8 +81,10 @@ class ClimbView extends WatchUi.View {
     }
 
 	function onTimer() {
-		duration += interval;
-		WatchUi.requestUpdate();
+		if (app.isWorkoutStarted()) {
+			duration += interval;
+			WatchUi.requestUpdate();
+		}
 	}
 	
 	private function startTimer() {
