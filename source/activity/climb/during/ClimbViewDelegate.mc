@@ -2,6 +2,7 @@ import Toybox.Application;
 import Toybox.ActivityRecording;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Attention;
 
 class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
 
@@ -21,6 +22,7 @@ private var app;
     			:sport => ActivityRecording.SPORT_GENERIC
     		});
     		session.start();
+    		Attention.vibrate([new Attention.VibeProfile(50, 1000)]);
     		
     		
     		app.setSession(session);
