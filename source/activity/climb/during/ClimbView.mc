@@ -1,3 +1,4 @@
+import Toybox.Activity;
 import Toybox.Application;
 import Toybox.Graphics;
 import Toybox.WatchUi;
@@ -16,7 +17,9 @@ class ClimbView extends WatchUi.View {
 	
 	private var durationLabel;
 	private var attemptsLabel;
+	private var hrLabel;
 	private var currentAttempts; // needed as WatchUi.Text does not provide a method to access the text 
+	private var currentHeartRate; // needed to avoid unnecessary updates of the current heart rate
 
     function initialize() {
         View.initialize();
@@ -28,6 +31,7 @@ class ClimbView extends WatchUi.View {
         timer = new Timer.Timer();
         duration = 0;
         currentAttempts = 0;
+        currentHeartRate = 0;
     }
 
     function onLayout(dc as Dc) as Void {
@@ -37,6 +41,7 @@ class ClimbView extends WatchUi.View {
         
         durationLabel = View.findDrawableById("timer") as Text;
         attemptsLabel = View.findDrawableById("attempts") as Text;
+        hrLabel = View.findDrawableById("hr") as Text;
         
         startTimer();
         
@@ -62,6 +67,7 @@ class ClimbView extends WatchUi.View {
         }
 		
 		writeDuration();
+		writeHeartRate();
     }
     
     function onShow() as Void {
@@ -95,5 +101,12 @@ class ClimbView extends WatchUi.View {
 		var minutes = duration / 60;
         var seconds = duration % 60;
         durationLabel.setText(Lang.format("$1$:$2$", [minutes, seconds.format("%02d")]));
+	}
+	
+	private function writeHeartRate() {
+		var lastHrSample = Activity.getActivityInfo().currentHeartRate;
+		if (lastHrSample != null && lastHrSample != currentHeartRate) {
+			hrLabel.setText(lastHrSample.format("%d"));
+		}
 	}
 }
