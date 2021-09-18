@@ -22,7 +22,8 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
 				WatchUi.pushView(new Rez.Menus.NewAttemptMenu(), new NewAttemptMenuDelegate(), WatchUi.SLIDE_LEFT);
     			break;
     		case :done:
-    			controller.climbDone();
+    			var climb = controller.climbDone();
+    			ClimbSummaryWriter.writeFiled(climb);
     			break;
     	} 
     }
