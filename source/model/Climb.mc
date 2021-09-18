@@ -55,4 +55,14 @@ class Climb {
 	function isComplete() as Boolean {
 		return status == Completed;
 	}
+	
+	function toString() as String {
+		var msg = "";
+		if (isComplete()) {
+			msg += "Completata"; 		
+		} else {
+			msg += "Fallita";
+		}
+		return msg + " in " + getAttempts() + " tentativi.";
+	}
 }
