@@ -26,5 +26,8 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
     			break;
     	} 
     }
-
+	
+	function onBack() {
+		WatchUi.popView(WatchUi.SLIDE_UP); // remove the current menu
+	}
 }

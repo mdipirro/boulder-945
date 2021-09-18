@@ -15,4 +15,13 @@ class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
     	pushView(new ClimbView(), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
     }
 
+	function onBack() {
+		if (Application.getApp().isWorkoutStarted()) {
+			// if the workous is ongoing, show the SaveSession menu to let the user save the session after a climb
+			WatchUi.pushView(new Rez.Menus.SaveSessionMenu(), new SaveSessionMenuDelegate(), WatchUi.SLIDE_LEFT);
+		} else {
+			// or else exit the app
+			WatchUi.popView(WatchUi.SLIDE_UP);
+		}
+	}
 }
