@@ -21,11 +21,15 @@ class WorkoutController {
 		workout.activeClimb().endAttempt(endTime);
 	}
 	
-	function climbDone() {
-		workout.activeClimb().complete();
+	function climbDone() as Climb {
+		var activeClimb = workout.activeClimb(); 
+		activeClimb.complete();
+		return activeClimb;
 	}
 	
-	function climbFailed() {
-		workout.activeClimb().fail();
+	function climbFailed() as Climb {
+		var activeClimb = workout.activeClimb(); 
+		activeClimb.fail();
+		return activeClimb;
 	}
 }
