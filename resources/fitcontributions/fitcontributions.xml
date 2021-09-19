@@ -1,0 +1,25 @@
+<fitContributions>
+	<fitField id="0" displayInActivitySummary="true" sortOrder = "0" dataLabel="@Strings.gradeASuccessful" unitLabel="@Strings.climbs" />
+	<fitField id="1" displayInActivitySummary="true" sortOrder = "1" dataLabel="@Strings.gradeAFailed" unitLabel="@Strings.climbs" />
+	<fitField id="2" displayInActivitySummary="true" sortOrder = "2" dataLabel="@Strings.gradeAAttempts" unitLabel="@Strings.attempts" />
+	
+	<fitField id="3" displayInActivitySummary="true" sortOrder = "3" dataLabel="@Strings.gradeBSuccessful" unitLabel="@Strings.climbs" />
+	<fitField id="4" displayInActivitySummary="true" sortOrder = "4" dataLabel="@Strings.gradeBFailed" unitLabel="@Strings.climbs" />
+	<fitField id="5" displayInActivitySummary="true" sortOrder = "5" dataLabel="@Strings.gradeBAttempts" unitLabel="@Strings.attempts" />
+	
+	<fitField id="6" displayInActivitySummary="true" sortOrder = "6" dataLabel="@Strings.gradeCSuccessful" unitLabel="@Strings.climbs" />
+	<fitField id="7" displayInActivitySummary="true" sortOrder = "7" dataLabel="@Strings.gradeCFailed" unitLabel="@Strings.climbs" />
+	<fitField id="8" displayInActivitySummary="true" sortOrder = "8" dataLabel="@Strings.gradeCAttempts" unitLabel="@Strings.attempts" />
+	
+	<fitField id="9" displayInActivitySummary="true" sortOrder = "9" dataLabel="@Strings.gradeDSuccessful" unitLabel="@Strings.climbs" />
+	<fitField id="10" displayInActivitySummary="true" sortOrder = "10" dataLabel="@Strings.gradeDFailed" unitLabel="@Strings.climbs" />
+	<fitField id="11" displayInActivitySummary="true" sortOrder = "11" dataLabel="@Strings.gradeDAttempts" unitLabel="@Strings.attempts" />
+	
+	<fitField id="12" displayInActivitySummary="true" sortOrder = "12" dataLabel="@Strings.gradeESuccessful" unitLabel="@Strings.climbs" />
+	<fitField id="13" displayInActivitySummary="true" sortOrder = "13" dataLabel="@Strings.gradeEFailed" unitLabel="@Strings.climbs" />
+	<fitField id="14" displayInActivitySummary="true" sortOrder = "14" dataLabel="@Strings.gradeEAttempts" unitLabel="@Strings.attempts" />
+	
+	<fitField id="15" displayInActivitySummary="true" sortOrder = "15" dataLabel="@Strings.gradeFSuccessful" unitLabel="@Strings.climbs" />
+	<fitField id="16" displayInActivitySummary="true" sortOrder = "16" dataLabel="@Strings.gradeFFailed" unitLabel="@Strings.climbs" />
+	<fitField id="17" displayInActivitySummary="true" sortOrder = "17" dataLabel="@Strings.gradeFAttempts" unitLabel="@Strings.attempts" />
+</fitContributions>
