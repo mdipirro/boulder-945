@@ -15,4 +15,31 @@
     <string id="attemptInitialValue">0</string>
     
     <string id="selectSaveSession">Salvare?</string>
+    
+    <string id="gradeASuccessful">A - Completate</string>
+    <string id="gradeAFailed">A - Fallite</string>
+    <string id="gradeAAttempts">A - Tentativi</string>
+    
+	<string id="gradeBSuccessful">B - Completate</string>
+    <string id="gradeBFailed">B - Fallite</string>
+    <string id="gradeBAttempts">B - Tentativi</string>
+    
+    <string id="gradeCSuccessful">C - Completate</string>
+    <string id="gradeCFailed">C - Fallite</string>
+    <string id="gradeCAttempts">C - Tentativi</string>
+    
+    <string id="gradeDSuccessful">D - Completate</string>
+    <string id="gradeDFailed">D - Fallite</string>
+    <string id="gradeDAttempts">D - Tentativi</string>
+    
+    <string id="gradeESuccessful">E - Completate</string>
+    <string id="gradeEFailed">E - Fallite</string>
+    <string id="gradeEAttempts">E - Tentativi</string>
+    
+    <string id="gradeFSuccessful">F - Completate</string>
+    <string id="gradeFFailed">F - Fallite</string>
+    <string id="gradeFAttempts">F - Tentativi</string>
+    
+    <string id="attempts">Tentativi</string>
+    <string id="climbs">Vie</string>
 </strings>
