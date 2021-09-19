@@ -15,9 +15,11 @@ class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onSelect(item as MenuItem) as Void {
-    	var session = Application.getApp().getSession();
+    	var app = Application.getApp();
+    	var session = app.getSession();
     	switch(item.getId()) {
     		case :save:
+    			ClimbSummaryWriter.writeSummary(session, app.getWorkout());
     			session.save();
     			endApp("Salvataggio...");
     			break;
