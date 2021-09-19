@@ -15,4 +15,8 @@ class Workout {
 	function activeClimb() as Climb {
 		return climbs[climbs.size() - 1];
 	}
+	
+	function getClimbs() as Array {
+		return climbs;
+	}
 }
