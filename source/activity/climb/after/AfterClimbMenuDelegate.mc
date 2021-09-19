@@ -23,7 +23,6 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
     			break;
     		case :done:
     			var climb = controller.climbDone();
-    			ClimbSummaryWriter.writeFiled(climb);
     			break;
     	} 
     }

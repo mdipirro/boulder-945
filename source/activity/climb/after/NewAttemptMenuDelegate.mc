@@ -19,7 +19,6 @@ class NewAttemptMenuDelegate extends WatchUi.Menu2InputDelegate {
     			break;
     		case :newClimb:
     			var climb = controller.climbFailed();
-    			ClimbSummaryWriter.writeFiled(climb);
     			WatchUi.switchToView(new Rez.Menus.GradeMenu(), new GradeMenuDelegate(), WatchUi.SLIDE_LEFT);
     			break;
     	}
