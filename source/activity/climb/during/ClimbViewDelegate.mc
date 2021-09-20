@@ -19,7 +19,7 @@ private var app;
     	if (session == null) {
     		session = ActivityRecording.createSession({
     			:name => "Intellighenzia Bouldering",
-    			:sport => ActivityRecording.SPORT_GENERIC
+    			:sport => ActivityRecording.SPORT_ROCK_CLIMBING
     		});
     		session.start();
     		Attention.vibrate([new Attention.VibeProfile(50, 1000)]);
