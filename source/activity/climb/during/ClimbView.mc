@@ -21,6 +21,8 @@ class ClimbView extends WatchUi.View {
 	private var currentAttempts; // needed as WatchUi.Text does not provide a method to access the text 
 	private var currentHeartRate; // needed to avoid unnecessary updates of the current heart rate
 
+	private var started;
+
     function initialize() {
         View.initialize();
         
@@ -32,6 +34,8 @@ class ClimbView extends WatchUi.View {
         duration = 0;
         currentAttempts = 0;
         currentHeartRate = 0;
+
+		started = false;
     }
 
     function onLayout(dc as Dc) as Void {
@@ -42,8 +46,6 @@ class ClimbView extends WatchUi.View {
         durationLabel = View.findDrawableById("timer") as Text;
         attemptsLabel = View.findDrawableById("attempts") as Text;
         hrLabel = View.findDrawableById("hr") as Text;
-        
-        startTimer();
         
         if (app.isWorkoutStarted()) {
         	// This is needed to init a new attempt on the climbs from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
@@ -61,9 +63,12 @@ class ClimbView extends WatchUi.View {
         	currentAttempts = currentClimb.getAttempts();
         	attemptsLabel.setText(currentAttempts.format("%d"));
         	
-        	// reset the timer
+        	// reset the timer or start it if the user just started the activity
+			if (!started) {
+				started = true;
+				startTimer();
+			}
         	duration = 0;
-        	writeDuration();
         }
 		
 		writeDuration();
