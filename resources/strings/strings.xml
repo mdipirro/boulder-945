@@ -49,4 +49,7 @@
     <string id="gradeD">D</string>
     <string id="gradeE">E</string>
     <string id="gradeF">F</string>
+
+    <string id="yes">Sì</string>
+    <string id="no">No</string>
 </strings>

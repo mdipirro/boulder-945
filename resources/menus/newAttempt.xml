@@ -1,4 +1,4 @@
 <menu2 id="NewAttemptMenu" title="@Strings.selectNewAttempt">
-    <menu-item id="newAtt" label="Sì" />
-    <menu-item id="newClimb" label="No" />
+    <menu-item id="newAtt" label="@Strings.yes" />
+    <menu-item id="newClimb" label="@Strings.no" />
 </menu2>
