@@ -9,14 +9,15 @@ class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onSelect(item as MenuItem) as Void {
-		var controller = Application.getApp().getWorkoutController();
+		var app = Application.getApp();
+		var controller = app.getWorkoutController();
 		var grade = item.getLabel();
 		controller.newClimb(grade);
-		if (Application.getApp().isWorkoutStarted()) {
+		if (app.isWorkoutStarted()) {
         	// This is needed to init a new attempt on the climbs from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
         	controller.newAttemptOnActiveClimb(Time.now());
         }
-    	pushView(new ClimbView(), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
+    	pushView(new ClimbView(app.getWorkout().activeClimb()), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
     }
 
 	function onBack() {

@@ -22,12 +22,12 @@ class ClimbView extends WatchUi.View {
 
 	private var started;
 
-    function initialize() {
+    function initialize(activeClimb as Climb) {
         View.initialize();
         
         app = Application.getApp();
         
-        currentClimb = app.getWorkout().activeClimb();
+        currentClimb = activeClimb;
         timer = new Timer.Timer();
         duration = 0;
         currentAttempts = 0;
