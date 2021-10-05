@@ -17,7 +17,7 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
 				WatchUi.pushView(new Rez.Menus.NewAttemptMenu(), new NewAttemptMenuDelegate(), WatchUi.SLIDE_LEFT);
     			break;
     		case :done:
-    			Application.getApp().getWorkoutController().climbDone();
+    			Application.getApp().getWorkout().activeClimb().complete();
     			break;
     	} 
     }

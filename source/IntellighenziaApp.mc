@@ -5,7 +5,6 @@ using Toybox.WatchUi;
 class IntellighenziaApp extends Application.AppBase {
 
 	private var workout;
-	private var controller;
 	private var session;
 	
 	// flow control flags
@@ -13,8 +12,7 @@ class IntellighenziaApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
-        workout = new $.Workout();
-        controller = new $.WorkoutController();
+        workout = new Workout();
         session = null;
         
         workoutStarted = false;
@@ -34,10 +32,6 @@ class IntellighenziaApp extends Application.AppBase {
     
     function setSession(sess as Session) as Void {
     	session = sess;
-    }
-	
-	function getWorkoutController() as WorkoutController {
-    	return controller;
     }
     
     function startWorkout() as Void {
