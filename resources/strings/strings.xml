@@ -42,4 +42,11 @@
     
     <string id="attempts">Tentativi</string>
     <string id="climbs">Vie</string>
+    
+    <string id="gradeA">A</string>
+    <string id="gradeB">B</string>
+    <string id="gradeC">C</string>
+    <string id="gradeD">D</string>
+    <string id="gradeE">E</string>
+    <string id="gradeF">F</string>
 </strings>
