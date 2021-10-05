@@ -52,4 +52,7 @@
 
     <string id="yes">Sì</string>
     <string id="no">No</string>
+
+    <string id="completed">Completata</string>
+    <string id="attempt">Tentativo</string>
 </strings>
