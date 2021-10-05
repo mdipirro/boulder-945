@@ -1,15 +1,17 @@
+using Grades;
+
 class WorkoutSummary {
 	
 	private var summary;
 	
 	function initialize(workout as Workout) {
 		summary = {
-			"A" => new GradeSummary(),
-			"B" => new GradeSummary(),
-			"C" => new GradeSummary(),
-			"D" => new GradeSummary(),
-			"E" => new GradeSummary(),
-			"F" => new GradeSummary()
+			Grades.A => new GradeSummary(),
+			Grades.B => new GradeSummary(),
+			Grades.C => new GradeSummary(),
+			Grades.D => new GradeSummary(),
+			Grades.E => new GradeSummary(),
+			Grades.F => new GradeSummary()
 		};
 		
 		var climbs = workout.getClimbs();

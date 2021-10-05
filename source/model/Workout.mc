@@ -1,3 +1,5 @@
+using Grades;
+
 class Workout {
 	
 	private var avgHr;
@@ -8,7 +10,7 @@ class Workout {
 		climbs = [];	
 	}
 	
-	function newClimb(grade as String) {
+	function newClimb(grade as Grades) {
 		climbs.add(new Climb(grade));
 	}
 	

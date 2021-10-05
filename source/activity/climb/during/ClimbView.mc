@@ -37,7 +37,7 @@ class ClimbView extends WatchUi.View {
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.ClimbLayout(dc));
         var gradeLabel = View.findDrawableById("grade") as Text;
-        gradeLabel.setText(currentClimb.getGrade());
+        gradeLabel.setText(Grades.toString(currentClimb.getGrade()));
         
         durationLabel = View.findDrawableById("timer") as Text;
         attemptsLabel = View.findDrawableById("attempts") as Text;

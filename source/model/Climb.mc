@@ -1,4 +1,5 @@
 import Toybox.Time;
+using Grades;
 
 class Climb {
 	
@@ -13,13 +14,13 @@ class Climb {
 	}
 	
 
-	function initialize(difficulty as String) {
+	function initialize(difficulty as Grades) {
 		grade = difficulty;
 		attempts = [];
 		status = InProgress;
 	}
 	
-	function getGrade() as String {
+	function getGrade() as Grades {
 		return grade;
 	}
 	

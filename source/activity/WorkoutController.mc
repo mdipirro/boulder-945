@@ -1,6 +1,8 @@
 import Toybox.Application;
 import Toybox.Time;
 
+using Grades;
+
 class WorkoutController {
 
 	private var workout; 
@@ -10,7 +12,7 @@ class WorkoutController {
 	}
 	
 	function newClimb(grade as String) {
-		workout.newClimb(grade);
+		workout.newClimb(Grades.fromString(grade));
 	}
 	
 	function newAttemptOnActiveClimb(startTime as Time.Moment) {

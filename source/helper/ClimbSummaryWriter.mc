@@ -2,11 +2,20 @@ import Toybox.Application;
 import Toybox.FitContributor;
 import Toybox.WatchUi;
 
+using Grades;
+
 class ClimbSummaryWriter {
 	
 	private static var fields = [];
 	
-	private static const grades = ["A", "B", "C", "D", "E", "F"];
+	private static const grades = [
+		Grades.A,
+		Grades.B,
+		Grades.C,
+		Grades.D,
+		Grades.E,
+		Grades.F
+	];
 	
 	private static const labels = [
 		Rez.Strings.gradeASuccessful,
