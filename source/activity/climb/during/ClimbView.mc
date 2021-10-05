@@ -10,7 +10,6 @@ class ClimbView extends WatchUi.View {
 
 	private var currentClimb;
 	private var timer;
-	private var controller;
 	private var duration;
 	
 	private const interval = 1; // seconds
@@ -29,7 +28,6 @@ class ClimbView extends WatchUi.View {
         app = Application.getApp();
         
         currentClimb = app.getWorkout().activeClimb();
-        controller = app.getWorkoutController();
         timer = new Timer.Timer();
         duration = 0;
         currentAttempts = 0;
@@ -46,11 +44,6 @@ class ClimbView extends WatchUi.View {
         durationLabel = View.findDrawableById("timer") as Text;
         attemptsLabel = View.findDrawableById("attempts") as Text;
         hrLabel = View.findDrawableById("hr") as Text;
-        
-        if (app.isWorkoutStarted()) {
-        	// This is needed to init a new attempt on the climbs from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
-        	controller.newAttemptOnActiveClimb(Time.now());
-        }
     }
 
     // Update the view

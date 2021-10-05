@@ -1,6 +1,6 @@
 using Toybox.Lang;
 using Toybox.System;
-using Toybox.WatchUi;
+import Toybox.WatchUi;
 
 class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
 
@@ -12,6 +12,10 @@ class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
 		var controller = Application.getApp().getWorkoutController();
 		var grade = item.getLabel();
 		controller.newClimb(grade);
+		if (Application.getApp().isWorkoutStarted()) {
+        	// This is needed to init a new attempt on the climbs from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
+        	controller.newAttemptOnActiveClimb(Time.now());
+        }
     	pushView(new ClimbView(), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
     }
 
