@@ -3,6 +3,7 @@ using Toybox.System;
 using Toybox.WatchUi;
 using Toybox.Application;
 using Toybox.Timer;
+using Toybox.Attention;
 
 class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
 
@@ -40,6 +41,7 @@ class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
 	function exit() as Void {
+		Attention.vibrate([new Attention.VibeProfile(50, 1000)]);
 		System.exit();	
 	}
 }

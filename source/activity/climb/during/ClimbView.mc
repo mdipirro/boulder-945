@@ -46,7 +46,7 @@ class ClimbView extends WatchUi.View {
         startTimer();
         
         if (app.isWorkoutStarted()) {
-        	// This is needed to init a new attempt on the climbds from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
+        	// This is needed to init a new attempt on the climbs from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
         	controller.newAttemptOnActiveClimb(Time.now());
         }
     }
@@ -79,9 +79,6 @@ class ClimbView extends WatchUi.View {
 	    }
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
     function onHide() as Void {
     	timer.stop();
     }

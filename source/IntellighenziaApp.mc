@@ -32,7 +32,7 @@ class IntellighenziaApp extends Application.AppBase {
     	return session;
     }
     
-    function setSession(sess as Session) {
+    function setSession(sess as Session) as Void {
     	session = sess;
     }
 	
@@ -40,7 +40,7 @@ class IntellighenziaApp extends Application.AppBase {
     	return controller;
     }
     
-    function startWorkout() {
+    function startWorkout() as Void {
     	workoutStarted = true;
     }
     
