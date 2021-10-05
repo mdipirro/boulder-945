@@ -7,12 +7,8 @@ using Toybox.Attention;
 
 class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
 
-	private var timer;
-
     function initialize() {
         Menu2InputDelegate.initialize();
-        
-        timer = new Timer.Timer();
     }
 
     function onSelect(item as MenuItem) as Void {
