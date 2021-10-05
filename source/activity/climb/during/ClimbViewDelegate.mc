@@ -27,7 +27,7 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
     		
     		app.setSession(session);
     		app.startWorkout();
-    		app.getWorkoutController().newAttemptOnActiveClimb(Time.now());
+    		app.getWorkoutController().newAttemptOnActiveClimb();
     		WatchUi.requestUpdate();
     	} else if (!session.isRecording()) {
 			session.start();

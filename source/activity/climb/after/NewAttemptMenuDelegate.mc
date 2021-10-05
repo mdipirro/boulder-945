@@ -14,7 +14,7 @@ class NewAttemptMenuDelegate extends WatchUi.Menu2InputDelegate {
     	switch (item.getId()) {
     		case :newAtt:
     			// If we're gonna do a new attempt, show the ClimbView as before and start a new attempt
-    			controller.newAttemptOnActiveClimb(Time.now());
+    			controller.newAttemptOnActiveClimb();
     			popView(WatchUi.SLIDE_LEFT);
     			break;
     		case :newClimb:

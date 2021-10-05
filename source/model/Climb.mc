@@ -1,4 +1,3 @@
-using Toybox.Time;
 using Grades;
 
 class Climb {
@@ -16,7 +15,7 @@ class Climb {
 
 	function initialize(difficulty as Grades) {
 		grade = difficulty;
-		attempts = [];
+		attempts = 0;
 		status = InProgress;
 	}
 	
@@ -25,16 +24,11 @@ class Climb {
 	}
 	
 	function getAttempts() as Number {
-		return attempts.size();
+		return attempts;
 	}
 	
-	function newAttempt(startTime as Time.Moment) as Void {
-		attempts.add(new Attempt(startTime));
-	}
-	
-	function endAttempt(endTime as Time.Moment) as Void {
-		var currentAttempt = attempts[attempts.size() - 1];
-		currentAttempt.end(endTime);
+	function newAttempt() as Void {
+		attempts++;
 	}
 	
 	function isInProgress() as Boolean {

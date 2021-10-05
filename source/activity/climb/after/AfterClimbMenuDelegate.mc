@@ -5,13 +5,8 @@ using Toybox.Time;
 
 class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
 
-	private var controller;
-
     function initialize() {
         Menu2InputDelegate.initialize();
-        
-        controller = Application.getApp().getWorkoutController();
-    	controller.attemptComplete(Time.now());
     }
 
     function onSelect(item as MenuItem) as Void {
@@ -22,7 +17,7 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
 				WatchUi.pushView(new Rez.Menus.NewAttemptMenu(), new NewAttemptMenuDelegate(), WatchUi.SLIDE_LEFT);
     			break;
     		case :done:
-    			var climb = controller.climbDone();
+    			Application.getApp().getWorkoutController().climbDone();
     			break;
     	} 
     }

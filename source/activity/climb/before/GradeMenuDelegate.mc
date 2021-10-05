@@ -15,7 +15,7 @@ class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
 		controller.newClimb(grade);
 		if (app.isWorkoutStarted()) {
         	// This is needed to init a new attempt on the climbs from the second on, as they start immediately (i.e. without waiting for the pressure on Start)
-        	controller.newAttemptOnActiveClimb(Time.now());
+        	controller.newAttemptOnActiveClimb();
         }
     	pushView(new ClimbView(app.getWorkout().activeClimb()), new ClimbViewDelegate(), WatchUi.SLIDE_LEFT);
     }
