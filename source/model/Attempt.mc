@@ -1,4 +1,4 @@
-import Toybox.Time;
+using Toybox.Time;
 
 class Attempt {
 	
@@ -10,7 +10,7 @@ class Attempt {
 		endTime = null;
 	}
 	
-	function end(time as Time.Moment) {
+	function end(time as Time.Moment) as Void {
 		endTime = time;
 	}
 	

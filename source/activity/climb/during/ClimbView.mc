@@ -1,8 +1,8 @@
-import Toybox.Activity;
-import Toybox.Application;
-import Toybox.Graphics;
-import Toybox.WatchUi;
-import Toybox.Timer;
+using Toybox.Activity;
+using Toybox.Application;
+using Toybox.Graphics;
+using Toybox.WatchUi;
+using Toybox.Timer;
 
 class ClimbView extends WatchUi.View {
 
@@ -86,24 +86,24 @@ class ClimbView extends WatchUi.View {
     	timer.stop();
     }
 
-	function onTimer() {
+	function onTimer() as Void {
 		if (app.isWorkoutStarted()) {
 			duration += interval;
 			WatchUi.requestUpdate();
 		}
 	}
 	
-	private function startTimer() {
+	private function startTimer() as Void {
 		timer.start(method(:onTimer), interval * 1000, true);
 	}
 	
-	private function writeDuration() {
+	private function writeDuration() as Void {
 		var minutes = duration / 60;
         var seconds = duration % 60;
         durationLabel.setText(Lang.format("$1$:$2$", [minutes, seconds.format("%02d")]));
 	}
 	
-	private function writeHeartRate() {
+	private function writeHeartRate() as Void {
 		var lastHrSample = Activity.getActivityInfo().currentHeartRate;
 		if (lastHrSample != null && lastHrSample != currentHeartRate) {
 			hrLabel.setText(lastHrSample.format("%d"));

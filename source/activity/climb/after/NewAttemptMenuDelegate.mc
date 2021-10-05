@@ -1,7 +1,7 @@
-import Toybox.Lang;
-import Toybox.System;
-import Toybox.WatchUi;
-import Toybox.Application;
+using Toybox.Lang;
+using Toybox.System;
+using Toybox.WatchUi;
+using Toybox.Application;
 
 class NewAttemptMenuDelegate extends WatchUi.Menu2InputDelegate {
 

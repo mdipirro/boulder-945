@@ -1,5 +1,5 @@
-import Toybox.Application;
-import Toybox.Time;
+using Toybox.Application;
+using Toybox.Time;
 
 using Grades;
 
@@ -11,15 +11,15 @@ class WorkoutController {
 		workout = Application.getApp().getWorkout();
 	}
 	
-	function newClimb(grade as String) {
+	function newClimb(grade as String) as Void {
 		workout.newClimb(Grades.fromString(grade));
 	}
 	
-	function newAttemptOnActiveClimb(startTime as Time.Moment) {
+	function newAttemptOnActiveClimb(startTime as Time.Moment) as Void {
 		workout.activeClimb().newAttempt(startTime);
 	} 
 	
-	function attemptComplete(endTime as Time.Moment) {
+	function attemptComplete(endTime as Time.Moment) as Void {
 		workout.activeClimb().endAttempt(endTime);
 	}
 	

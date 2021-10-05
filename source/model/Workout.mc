@@ -10,7 +10,7 @@ class Workout {
 		climbs = [];	
 	}
 	
-	function newClimb(grade as Grades) {
+	function newClimb(grade as Grades) as Void {
 		climbs.add(new Climb(grade));
 	}
 	

@@ -1,6 +1,6 @@
-import Toybox.Application;
-import Toybox.Lang;
-import Toybox.WatchUi;
+using Toybox.Application;
+using Toybox.Lang;
+using Toybox.WatchUi;
 
 class IntellighenziaApp extends Application.AppBase {
 
@@ -20,15 +20,6 @@ class IntellighenziaApp extends Application.AppBase {
         workoutStarted = false;
     }
 
-    // onStart() is called on application start up
-    function onStart(state as Dictionary?) as Void {
-    }
-
-    // onStop() is called when your application is exiting
-    function onStop(state as Dictionary?) as Void {
-    }
-
-    // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
         return [ new Rez.Menus.GradeMenu(), new GradeMenuDelegate() ] as Array<Views or InputDelegates>;
     }

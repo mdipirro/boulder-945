@@ -1,4 +1,4 @@
-import Toybox.Time;
+using Toybox.Time;
 using Grades;
 
 class Climb {
@@ -28,11 +28,11 @@ class Climb {
 		return attempts.size();
 	}
 	
-	function newAttempt(startTime as Time.Moment) {
+	function newAttempt(startTime as Time.Moment) as Void {
 		attempts.add(new Attempt(startTime));
 	}
 	
-	function endAttempt(endTime as Time.Moment) {
+	function endAttempt(endTime as Time.Moment) as Void {
 		var currentAttempt = attempts[attempts.size() - 1];
 		currentAttempt.end(endTime);
 	}
@@ -41,7 +41,7 @@ class Climb {
 		return status == InProgress;
 	}
 	
-	function fail() {
+	function fail() as Void {
 		status = Failed;
 	}
 	
@@ -49,7 +49,7 @@ class Climb {
 		return status == Failed;
 	}
 	
-	function complete() {
+	function complete() as Void {
 		status = Completed;
 	}
 	

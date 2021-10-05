@@ -1,4 +1,4 @@
-import Toybox.Lang;
+using Toybox.Lang;
 
 class GradeSummary {
 	
@@ -12,7 +12,7 @@ class GradeSummary {
 		failed = 0;
 	}
 	
-	function newClimb(climb as Climb) {
+	function newClimb(climb as Climb) as Void {
 		attempts += climb.getAttempts();
 		if (climb.isComplete()) {
 			successful++;

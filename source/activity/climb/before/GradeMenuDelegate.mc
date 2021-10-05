@@ -1,6 +1,6 @@
-import Toybox.Lang;
-import Toybox.System;
-import Toybox.WatchUi;
+using Toybox.Lang;
+using Toybox.System;
+using Toybox.WatchUi;
 
 class GradeMenuDelegate extends WatchUi.Menu2InputDelegate {
 

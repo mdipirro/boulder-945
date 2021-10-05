@@ -1,7 +1,7 @@
-import Toybox.Application;
-import Toybox.System;
-import Toybox.WatchUi;
-import Toybox.Time;
+using Toybox.Application;
+using Toybox.System;
+using Toybox.WatchUi;
+using Toybox.Time;
 
 class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
 
@@ -27,7 +27,7 @@ class AfterClimbMenuDelegate extends WatchUi.Menu2InputDelegate {
     	} 
     }
 	
-	function onBack() {
+	function onBack() as Void {
 		WatchUi.popView(WatchUi.SLIDE_UP); // remove the current menu
 	}
 }

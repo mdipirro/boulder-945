@@ -1,8 +1,8 @@
-import Toybox.Lang;
-import Toybox.System;
-import Toybox.WatchUi;
-import Toybox.Application;
-import Toybox.Timer;
+using Toybox.Lang;
+using Toybox.System;
+using Toybox.WatchUi;
+using Toybox.Application;
+using Toybox.Timer;
 
 class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
 
@@ -34,12 +34,12 @@ class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
     	}
     }
     
-    private function endApp(msg as String) {
+    private function endApp(msg as String) as Void {
     	new Timer.Timer().start(method(:exit), 5000, false);
     	WatchUi.pushView(new WatchUi.ProgressBar(msg, null), null, WatchUi.SLIDE_DOWN);
     }
 
-	function exit() {
+	function exit() as Void {
 		System.exit();	
 	}
 }

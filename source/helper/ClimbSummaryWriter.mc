@@ -1,6 +1,6 @@
-import Toybox.Application;
-import Toybox.FitContributor;
-import Toybox.WatchUi;
+using Toybox.Application;
+using Toybox.FitContributor;
+using Toybox.WatchUi;
 
 using Grades;
 
@@ -38,7 +38,7 @@ class ClimbSummaryWriter {
 		Rez.Strings.gradeFAttempts
 	];
 	
-	static function writeSummary(session as Session, workout as Workout) {
+	static function writeSummary(session as Session, workout as Workout) as Void {
 		if (fields.size() == 0) {
 			// do something only if it's the first time this method gets called, otherwise do nothing. This way the operation is idempotent
 			var summary = new WorkoutSummary(workout);

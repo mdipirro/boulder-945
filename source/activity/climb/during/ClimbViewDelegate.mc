@@ -1,12 +1,12 @@
-import Toybox.Application;
-import Toybox.ActivityRecording;
-import Toybox.System;
-import Toybox.WatchUi;
-import Toybox.Attention;
+using Toybox.Application;
+using Toybox.ActivityRecording;
+using Toybox.System;
+using Toybox.WatchUi;
+using Toybox.Attention;
 
 class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
 
-private var app;
+	private var app;
 
 	function initialize() {
         BehaviorDelegate.initialize();
@@ -14,7 +14,7 @@ private var app;
         app = Application.getApp();
     }
     
-    function onSelect() {
+    function onSelect() as Boolean {
     	var session = app.getSession();
     	if (session == null) {
     		session = ActivityRecording.createSession({
@@ -35,6 +35,7 @@ private var app;
 			session.stop();
 			WatchUi.pushView(new Rez.Menus.SaveSessionMenu(), new SaveSessionMenuDelegate(), WatchUi.SLIDE_LEFT);	
     	}
+		return true;
     }
 
     function onBack() as Boolean {
