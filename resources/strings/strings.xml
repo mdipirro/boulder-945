@@ -55,4 +55,8 @@
 
     <string id="completed">Completata</string>
     <string id="attempt">Tentativo</string>
+
+    <string id="save">Salva</string>
+    <string id="discard">Elimina</string>
+    <string id="restart">Riprendi</string>
 </strings>

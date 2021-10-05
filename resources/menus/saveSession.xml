@@ -1,5 +1,5 @@
 <menu2 id="SaveSessionMenu" title="@Strings.selectSaveSession">
-    <menu-item id="save" label="Salva" />
-    <menu-item id="discard" label="Elimina" />
-    <menu-item id="start" label="Riprendi"/>
+    <menu-item id="save" label="@Strings.save" />
+    <menu-item id="discard" label="@Strings.discard" />
+    <menu-item id="start" label="@Strings.restart"/>
 </menu2>
