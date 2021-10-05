@@ -2,11 +2,9 @@ using Grades;
 
 class Workout {
 	
-	private var avgHr;
 	private var climbs;
 	
 	function initialize() {
-		avgHr = 0;
 		climbs = [];	
 	}
 	
