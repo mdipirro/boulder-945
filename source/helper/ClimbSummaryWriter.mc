@@ -6,18 +6,18 @@ using Grades;
 
 class ClimbSummaryWriter {
 	
-	private static var fields = [];
+	private static var _fields = [];
 	
-	private static const grades = [
-		Grades.A,
-		Grades.B,
-		Grades.C,
-		Grades.D,
-		Grades.E,
-		Grades.F
+	private static const GRADES = [
+		Grades.GRADE_A,
+		Grades.GRADE_B,
+		Grades.GRADE_C,
+		Grades.GRADE_D,
+		Grades.GRADE_E,
+		Grades.GRADE_F
 	];
 	
-	private static const labels = [
+	private static const LABELS = [
 		Rez.Strings.gradeASuccessful,
 		Rez.Strings.gradeAFailed,
 		Rez.Strings.gradeAAttempts,
@@ -39,32 +39,32 @@ class ClimbSummaryWriter {
 	];
 	
 	static function writeSummary(session as Session, workout as Workout) as Void {
-		if (fields.size() == 0) {
+		if (_fields.size() == 0) {
 			// do something only if it's the first time this method gets called, otherwise do nothing. This way the operation is idempotent
 			var summary = new WorkoutSummary(workout);
-			for (var i = 0; i < grades.size(); i++) {
-				var gradeSummary = summary.getSummaryForGrade(grades[i]);
+			for (var i = 0; i < GRADES.size(); i++) {
+				var gradeSummary = summary.getSummaryForGrade(GRADES[i]);
 				if (gradeSummary.getAttempts() > 0) { // add fields only if there's at least 1 attempt
 					var gradeIndex = i * 3; // three fields for each grade
 					
-					var completedField = session.createField(WatchUi.loadResource(labels[gradeIndex]), gradeIndex, FitContributor.DATA_TYPE_UINT8, {
+					var completedField = session.createField(WatchUi.loadResource(LABELS[gradeIndex]), gradeIndex, FitContributor.DATA_TYPE_UINT8, {
 						:mesgType => FitContributor.MESG_TYPE_SESSION
 					});
 					completedField.setData(gradeSummary.getSuccessful());
 					
-					var failedField = session.createField(WatchUi.loadResource(labels[gradeIndex + 1]), gradeIndex + 1, FitContributor.DATA_TYPE_UINT8, {
+					var failedField = session.createField(WatchUi.loadResource(LABELS[gradeIndex + 1]), gradeIndex + 1, FitContributor.DATA_TYPE_UINT8, {
 						:mesgType => FitContributor.MESG_TYPE_SESSION
 					});
 					failedField.setData(gradeSummary.getFailed());
 					
-					var attemptsField = session.createField(WatchUi.loadResource(labels[gradeIndex + 2]), gradeIndex + 2, FitContributor.DATA_TYPE_UINT8, {
+					var attemptsField = session.createField(WatchUi.loadResource(LABELS[gradeIndex + 2]), gradeIndex + 2, FitContributor.DATA_TYPE_UINT8, {
 						:mesgType => FitContributor.MESG_TYPE_SESSION
 					});
 					attemptsField.setData(gradeSummary.getAttempts());
 					
-					fields.add(completedField);
-					fields.add(failedField);
-					fields.add(attemptsField);
+					_fields.add(completedField);
+					_fields.add(failedField);
+					_fields.add(attemptsField);
 				}
 			}
 		}

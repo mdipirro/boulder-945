@@ -6,16 +6,16 @@ using Toybox.Attention;
 
 class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
 
-	private var app;
+	private var _app;
 
 	function initialize() {
         BehaviorDelegate.initialize();
         
-        app = Application.getApp();
+        _app = Application.getApp();
     }
     
     function onSelect() as Boolean {
-    	var session = app.getSession();
+    	var session = _app.getSession();
     	if (session == null) {
     		session = ActivityRecording.createSession({
     			:name => "Intellighenzia Bouldering",
@@ -25,9 +25,9 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
     		Attention.vibrate([new Attention.VibeProfile(50, 1000)]);
     		
     		
-    		app.setSession(session);
-    		app.startWorkout();
-    		app.getWorkout().activeClimb().newAttempt();
+    		_app.setSession(session);
+    		_app.startWorkout();
+    		_app.getWorkout().activeClimb().newAttempt();
     		WatchUi.requestUpdate();
     	} else if (!session.isRecording()) {
 			session.start();
@@ -39,7 +39,7 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onBack() as Boolean {
-    	if (app.isWorkoutStarted()) {
+    	if (_app.isWorkoutStarted()) {
     		WatchUi.pushView(new Rez.Menus.AfterClimbMenu(), new AfterClimbMenuDelegate(), WatchUi.SLIDE_LEFT);
     	} else {
 			WatchUi.popView(WatchUi.SLIDE_UP);    	

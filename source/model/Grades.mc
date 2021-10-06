@@ -2,28 +2,28 @@ using Toybox.Lang;
 
 module Grades {
 	enum {
-		A,
-		B,
-		C,
-		D,
-		E,
-		F
+		GRADE_A,
+		GRADE_B,
+		GRADE_C,
+		GRADE_D,
+		GRADE_E,
+		GRADE_F
 	}
 	
 	function fromString(grade as String) as Grades {
 		switch (grade) {
 			case "A":
-				return A;
+				return GRADE_A;
 			case "B":
-				return B;
+				return GRADE_B;
 			case "C":
-				return C;
+				return GRADE_C;
 			case "D":
-				return D;
+				return GRADE_D;
 			case "E":
-				return E;
+				return GRADE_E;
 			case "F":
-				return F;
+				return GRADE_F;
 			default:
 				throw new Lang.InvalidValueException("Unrecognized grade: " + grade);
 		}
@@ -31,17 +31,17 @@ module Grades {
 	
 	function toString(grade as Grades) as String {
 		switch (grade) {
-			case A:
+			case GRADE_A:
 				return "A";
-			case B:
+			case GRADE_B:
 				return "B";
-			case C:
+			case GRADE_C:
 				return "C";
-			case D:
+			case GRADE_D:
 				return "D";
-			case E:
+			case GRADE_E:
 				return "E";
-			case F:
+			case GRADE_F:
 				return "F";
 		}
 	}

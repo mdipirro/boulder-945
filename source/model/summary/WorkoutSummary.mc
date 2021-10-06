@@ -2,26 +2,26 @@ using Grades;
 
 class WorkoutSummary {
 	
-	private var summary;
+	private var _summary;
 	
 	function initialize(workout as Workout) {
-		summary = {
-			Grades.A => new GradeSummary(),
-			Grades.B => new GradeSummary(),
-			Grades.C => new GradeSummary(),
-			Grades.D => new GradeSummary(),
-			Grades.E => new GradeSummary(),
-			Grades.F => new GradeSummary()
+		_summary = {
+			Grades.GRADE_A => new GradeSummary(),
+			Grades.GRADE_B => new GradeSummary(),
+			Grades.GRADE_C => new GradeSummary(),
+			Grades.GRADE_D => new GradeSummary(),
+			Grades.GRADE_E => new GradeSummary(),
+			Grades.GRADE_F => new GradeSummary()
 		};
 		
 		var climbs = workout.getClimbs();
 		for (var i = 0; i < climbs.size(); i++) {
 			var climb = climbs[i];
-			summary[climb.getGrade()].newClimb(climb);
+			_summary[climb.getGrade()].newClimb(climb);
 		}
 	}
 	
 	function getSummaryForGrade(grade as String) as GradeSummary {
-		return summary[grade];
+		return _summary[grade];
 	}
 }

@@ -6,44 +6,44 @@ using Toybox.Timer;
 
 class ClimbView extends WatchUi.View {
 
-	private var app;
+	private var _app;
 
-	private var currentClimb;
-	private var timer;
-	private var duration;
+	private var _currentClimb;
+	private var _timer;
+	private var _duration;
 	
-	private const interval = 1; // seconds
+	private const INTERVAL = 1; // seconds
 	
-	private var durationLabel;
-	private var attemptsLabel;
-	private var hrLabel;
-	private var currentAttempts; // needed as WatchUi.Text does not provide a method to access the text 
-	private var currentHeartRate; // needed to avoid unnecessary updates of the current heart rate
+	private var _durationLabel;
+	private var _attemptsLabel;
+	private var _hrLabel;
+	private var _currentAttempts; // needed as WatchUi.Text does not provide a method to access the text 
+	private var _currentHeartRate; // needed to avoid unnecessary updates of the current heart rate
 
-	private var started;
+	private var _started;
 
     function initialize(activeClimb as Climb) {
         View.initialize();
         
-        app = Application.getApp();
+        _app = Application.getApp();
         
-        currentClimb = activeClimb;
-        timer = new Timer.Timer();
-        duration = 0;
-        currentAttempts = 0;
-        currentHeartRate = 0;
+        _currentClimb = activeClimb;
+        _timer = new Timer.Timer();
+        _duration = 0;
+        _currentAttempts = 0;
+        _currentHeartRate = 0;
 
-		started = false;
+		_started = false;
     }
 
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.ClimbLayout(dc));
         var gradeLabel = View.findDrawableById("grade") as Text;
-        gradeLabel.setText(Grades.toString(currentClimb.getGrade()));
+        gradeLabel.setText(Grades.toString(_currentClimb.getGrade()));
         
-        durationLabel = View.findDrawableById("timer") as Text;
-        attemptsLabel = View.findDrawableById("attempts") as Text;
-        hrLabel = View.findDrawableById("hr") as Text;
+        _durationLabel = View.findDrawableById("timer") as Text;
+        _attemptsLabel = View.findDrawableById("attempts") as Text;
+        _hrLabel = View.findDrawableById("hr") as Text;
     }
 
     // Update the view
@@ -51,17 +51,17 @@ class ClimbView extends WatchUi.View {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
         
-        if (currentClimb.getAttempts() > currentAttempts) {
+        if (_currentClimb.getAttempts() > _currentAttempts) {
         	// Here we know there's a new attempt w.r.t. the last time we showed the view
-        	currentAttempts = currentClimb.getAttempts();
-        	attemptsLabel.setText(currentAttempts.format("%d"));
+        	_currentAttempts = _currentClimb.getAttempts();
+        	_attemptsLabel.setText(_currentAttempts.format("%d"));
         	
         	// reset the timer or start it if the user just started the activity
-			if (!started) {
-				started = true;
+			if (!_started) {
+				_started = true;
 				startTimer();
 			}
-        	duration = 0;
+        	_duration = 0;
         }
 		
 		writeDuration();
@@ -70,7 +70,7 @@ class ClimbView extends WatchUi.View {
     
     function onShow() as Void {
     	// Restart the timer but don't count that as a new attempt only if the climb is still in progress
-    	if (currentClimb.isInProgress()) {
+    	if (_currentClimb.isInProgress()) {
 	    	startTimer();
 	    } else {
 	    	WatchUi.popView(WatchUi.SLIDE_LEFT); // pop the view is the current climb was ended (either successfully or not)
@@ -78,30 +78,30 @@ class ClimbView extends WatchUi.View {
     }
 
     function onHide() as Void {
-    	timer.stop();
+    	_timer.stop();
     }
 
 	function onTimer() as Void {
-		if (app.isWorkoutStarted()) {
-			duration += interval;
+		if (_app.isWorkoutStarted()) {
+			_duration += INTERVAL;
 			WatchUi.requestUpdate();
 		}
 	}
 	
 	private function startTimer() as Void {
-		timer.start(method(:onTimer), interval * 1000, true);
+		_timer.start(method(:onTimer), INTERVAL * 1000, true);
 	}
 	
 	private function writeDuration() as Void {
-		var minutes = duration / 60;
-        var seconds = duration % 60;
-        durationLabel.setText(Lang.format("$1$:$2$", [minutes, seconds.format("%02d")]));
+		var minutes = _duration / 60;
+        var seconds = _duration % 60;
+        _durationLabel.setText(Lang.format("$1$:$2$", [minutes, seconds.format("%02d")]));
 	}
 	
 	private function writeHeartRate() as Void {
 		var lastHrSample = Activity.getActivityInfo().currentHeartRate;
-		if (lastHrSample != null && lastHrSample != currentHeartRate) {
-			hrLabel.setText(lastHrSample.format("%d"));
+		if (lastHrSample != null && lastHrSample != _currentHeartRate) {
+			_hrLabel.setText(lastHrSample.format("%d"));
 		}
 	}
 }

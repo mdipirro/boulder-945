@@ -2,36 +2,36 @@ using Toybox.Lang;
 
 class GradeSummary {
 	
-	private var attempts;
-	private var successful;
-	private var failed;
+	private var _attempts;
+	private var _successful;
+	private var _failed;
 	
 	function initialize() {
-		attempts = 0;
-		successful = 0;
-		failed = 0;
+		_attempts = 0;
+		_successful = 0;
+		_failed = 0;
 	}
 	
 	function newClimb(climb as Climb) as Void {
-		attempts += climb.getAttempts();
+		_attempts += climb.getAttempts();
 		if (climb.isComplete()) {
-			successful++;
+			_successful++;
 		} else if (climb.isFailed()) {
-			failed++;
+			_failed++;
 		} else {
 			throw new Lang.InvalidValueException("Detected a climb that is still in progress");
 		} 
 	}
 	
 	function getAttempts() as Number {
-		return attempts;
+		return _attempts;
 	}
 	
 	function getSuccessful() as Number {
-		return successful;
+		return _successful;
 	}
 	
 	function getFailed() as Number {
-		return failed;
+		return _failed;
 	}
 }

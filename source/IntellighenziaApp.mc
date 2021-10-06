@@ -4,18 +4,18 @@ using Toybox.WatchUi;
 
 class IntellighenziaApp extends Application.AppBase {
 
-	private var workout;
-	private var session;
+	private var _workout;
+	private var _session;
 	
 	// flow control flags
-	private var workoutStarted;
+	private var _workoutStarted;
 
     function initialize() {
         AppBase.initialize();
-        workout = new Workout();
-        session = null;
+        _workout = new Workout();
+        _session = null;
         
-        workoutStarted = false;
+        _workoutStarted = false;
     }
 
     function getInitialView() as Array<Views or InputDelegates>? {
@@ -23,23 +23,23 @@ class IntellighenziaApp extends Application.AppBase {
     }
     
     function getWorkout() as Workout {
-    	return workout;
+    	return _workout;
     }
     
     function getSession() as Session {
-    	return session;
+    	return _session;
     }
     
     function setSession(sess as Session) as Void {
-    	session = sess;
+    	_session = sess;
     }
     
     function startWorkout() as Void {
-    	workoutStarted = true;
+    	_workoutStarted = true;
     }
     
     function isWorkoutStarted() as Bool {
-    	return workoutStarted;
+    	return _workoutStarted;
     }
 }
 

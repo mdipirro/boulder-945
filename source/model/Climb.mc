@@ -2,9 +2,9 @@ using Grades;
 
 class Climb {
 	
-	private var grade;
-	private var attempts;
-	private var status;
+	private var _grade;
+	private var _attempts;
+	private var _status;
 	
 	enum {
 		InProgress,
@@ -14,41 +14,41 @@ class Climb {
 	
 
 	function initialize(difficulty as Grades) {
-		grade = difficulty;
-		attempts = 0;
-		status = InProgress;
+		_grade = difficulty;
+		_attempts = 0;
+		_status = InProgress;
 	}
 	
 	function getGrade() as Grades {
-		return grade;
+		return _grade;
 	}
 	
 	function getAttempts() as Number {
-		return attempts;
+		return _attempts;
 	}
 	
 	function newAttempt() as Void {
-		attempts++;
+		_attempts++;
 	}
 	
 	function isInProgress() as Boolean {
-		return status == InProgress;
+		return _status == InProgress;
 	}
 	
 	function fail() as Void {
-		status = Failed;
+		_status = Failed;
 	}
 	
 	function isFailed() as Boolean {
-		return status == Failed;
+		return _status == Failed;
 	}
 	
 	function complete() as Void {
-		status = Completed;
+		_status = Completed;
 	}
 	
 	function isComplete() as Boolean {
-		return status == Completed;
+		return _status == Completed;
 	}
 	
 	function toString() as String {

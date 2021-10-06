@@ -2,21 +2,21 @@ using Grades;
 
 class Workout {
 	
-	private var climbs;
+	private var _climbs;
 	
 	function initialize() {
-		climbs = [];	
+		_climbs = [];	
 	}
 	
 	function newClimb(grade as Grades) as Void {
-		climbs.add(new Climb(grade));
+		_climbs.add(new Climb(grade));
 	}
 	
 	function activeClimb() as Climb {
-		return climbs[climbs.size() - 1];
+		return _climbs[_climbs.size() - 1];
 	}
 	
 	function getClimbs() as Array {
-		return climbs;
+		return _climbs;
 	}
 }
