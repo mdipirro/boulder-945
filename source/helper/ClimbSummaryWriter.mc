@@ -4,6 +4,8 @@ using Toybox.WatchUi;
 
 using Grades;
 
+using Toybox.System;
+
 class ClimbSummaryWriter {
 	
 	private static var _fields = [];
@@ -47,23 +49,26 @@ class ClimbSummaryWriter {
 				if (gradeSummary.getAttempts() > 0) { // add fields only if there's at least 1 attempt
 					var gradeIndex = i * 3; // three fields for each grade
 					
-					var completedField = session.createField(WatchUi.loadResource(LABELS[gradeIndex]), gradeIndex, FitContributor.DATA_TYPE_UINT8, {
-						:mesgType => FitContributor.MESG_TYPE_SESSION
-					});
-					completedField.setData(gradeSummary.getSuccessful());
+					if (gradeSummary.getSuccessful() > 0) {
+						var completedField = session.createField(WatchUi.loadResource(LABELS[gradeIndex]), gradeIndex, FitContributor.DATA_TYPE_UINT8, {
+							:mesgType => FitContributor.MESG_TYPE_SESSION
+						});
+						completedField.setData(gradeSummary.getSuccessful());
+						_fields.add(completedField);
+					}
 					
-					var failedField = session.createField(WatchUi.loadResource(LABELS[gradeIndex + 1]), gradeIndex + 1, FitContributor.DATA_TYPE_UINT8, {
-						:mesgType => FitContributor.MESG_TYPE_SESSION
-					});
-					failedField.setData(gradeSummary.getFailed());
+					if (gradeSummary.getFailed() > 0) {
+						var failedField = session.createField(WatchUi.loadResource(LABELS[gradeIndex + 1]), gradeIndex + 1, FitContributor.DATA_TYPE_UINT8, {
+							:mesgType => FitContributor.MESG_TYPE_SESSION
+						});
+						failedField.setData(gradeSummary.getFailed());
+						_fields.add(failedField);
+					}
 					
 					var attemptsField = session.createField(WatchUi.loadResource(LABELS[gradeIndex + 2]), gradeIndex + 2, FitContributor.DATA_TYPE_UINT8, {
 						:mesgType => FitContributor.MESG_TYPE_SESSION
 					});
 					attemptsField.setData(gradeSummary.getAttempts());
-					
-					_fields.add(completedField);
-					_fields.add(failedField);
 					_fields.add(attemptsField);
 				}
 			}
