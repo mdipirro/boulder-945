@@ -16,10 +16,11 @@ class GradeSummary {
 		_attempts += climb.getAttempts();
 		if (climb.isComplete()) {
 			_successful++;
-		} else if (climb.isFailed()) {
+		} else if (climb.isFailed() || climb.isInProgress()) {
+			// Count the climb as failed if the activity is ended while the climb is still in progress
 			_failed++;
 		} else {
-			throw new Lang.InvalidValueException("Detected a climb that is still in progress");
+			throw new Lang.InvalidValueException("Unexpected climb state");
 		} 
 	}
 	
