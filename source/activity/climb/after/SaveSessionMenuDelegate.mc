@@ -18,11 +18,11 @@ class SaveSessionMenuDelegate extends WatchUi.Menu2InputDelegate {
     		case :save:
     			ClimbSummaryWriter.writeSummary(session, app.getWorkout());
     			session.save();
-    			endApp("Salvataggio...");
+    			endApp(WatchUi.loadResource(Rez.Strings.saving));
     			break;
     		case :discard:
     			session.discard();
-    			endApp("Eliminazione...");
+    			endApp(WatchUi.loadResource(Rez.Strings.discarding));
     			break;
     		case :start:
     			session.start();

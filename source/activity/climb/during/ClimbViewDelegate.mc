@@ -18,7 +18,7 @@ class ClimbViewDelegate extends WatchUi.BehaviorDelegate {
     	var session = _app.getSession();
     	if (session == null) {
     		session = ActivityRecording.createSession({
-    			:name => "Intellighenzia Bouldering",
+    			:name => WatchUi.loadResource(Rez.Strings.ActivityName),
     			:sport => ActivityRecording.SPORT_ROCK_CLIMBING
     		});
     		session.start();

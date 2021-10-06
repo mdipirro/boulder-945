@@ -1,6 +1,8 @@
 <strings>
     <string id="AppName">Intellighenzia</string>
 
+    <string id="ActivityName">Intellighenzia Bouldering</string>
+
     <string id="selectGrade">Seleziona il grado</string>
     <string id="selectResult">Via completata?</string>
     <string id="selectNewAttempt">Nuovo tentativo?</string>
@@ -59,4 +61,7 @@
     <string id="save">Salva</string>
     <string id="discard">Elimina</string>
     <string id="restart">Riprendi</string>
+
+    <string id="saving">Salvataggio...</string>
+    <string id="discarding">Eliminazione...</string>
 </strings>
